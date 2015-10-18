@@ -1,5 +1,5 @@
 name               'mongodb'
-version            '0.0.9'
+version            '0.0.10'
 maintainer         'Josh Wisely'
 maintainer_email   'joshwisely@gmail.com'
 supports           'centos'

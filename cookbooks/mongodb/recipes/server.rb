@@ -35,7 +35,7 @@ end
 template '/etc/mongod.conf'  do
   action :create
   variables(
-    :ip_address => 'foo'
+    :ip_address => node['ipaddress']
   )
   notifies :restart, 'service[mongod]'
 end
