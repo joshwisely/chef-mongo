@@ -1,10 +1,6 @@
-#Add the MongoDB repository
-yum_repository 'mongodo' do
-  description 'MongoDB Repository'
-  baseurl 'https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.0/x86_64/'
-  gpgcheck FALSE
-  action :create
-end
+#Take care of SELinux
+include_recipe 'selinux::permissive'
+include_recipe 'mongodb::mongodb_repo'
 
 #MongoDB daemon and associated configuration and init scripts.
 package 'mongodb-org-server' do
