@@ -1,0 +1,271 @@
+I, [2015-10-18T12:05:08.686353 #14454]  INFO -- server-centos-71: -----> Creating <server-centos-71>...
+I, [2015-10-18T12:05:08.934275 #14454]  INFO -- server-centos-71: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-10-18T12:05:09.044012 #14454]  INFO -- server-centos-71: [default] Importing base box 'opscode-centos-7.1'...
+I, [2015-10-18T12:05:20.065006 #14454]  INFO -- server-centos-71: Progress: 20%Progress: 50%Progress: 70%Progress: 90%[default] Matching MAC address for NAT networking...
+I, [2015-10-18T12:05:20.404780 #14454]  INFO -- server-centos-71: [default] Setting the name of the VM...
+I, [2015-10-18T12:05:20.484607 #14454]  INFO -- server-centos-71: [default] Clearing any previously set forwarded ports...
+I, [2015-10-18T12:05:20.883458 #14454]  INFO -- server-centos-71: [default] Fixed port collision for 22 => 2222. Now on port 2205.
+I, [2015-10-18T12:05:20.906041 #14454]  INFO -- server-centos-71: [default] Clearing any previously set network interfaces...
+I, [2015-10-18T12:05:20.957172 #14454]  INFO -- server-centos-71: [default] Preparing network interfaces based on configuration...
+I, [2015-10-18T12:05:21.001658 #14454]  INFO -- server-centos-71: [default] Forwarding ports...
+I, [2015-10-18T12:05:21.044889 #14454]  INFO -- server-centos-71: [default] -- 22 => 2205 (adapter 1)
+I, [2015-10-18T12:05:21.284284 #14454]  INFO -- server-centos-71: [default] Booting VM...
+I, [2015-10-18T12:05:21.720490 #14454]  INFO -- server-centos-71: [default] Waiting for machine to boot. This may take a few minutes...
+I, [2015-10-18T12:05:37.723686 #14454]  INFO -- server-centos-71: [default] Machine booted and ready!
+I, [2015-10-18T12:05:37.749060 #14454]  INFO -- server-centos-71: [default] The guest additions on this VM do not match the installed version of
+I, [2015-10-18T12:05:37.749129 #14454]  INFO -- server-centos-71: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2015-10-18T12:05:37.749150 #14454]  INFO -- server-centos-71: prevent things such as shared folders from working properly. If you see
+I, [2015-10-18T12:05:37.749164 #14454]  INFO -- server-centos-71: shared folder errors, please make sure the guest additions within the
+I, [2015-10-18T12:05:37.749175 #14454]  INFO -- server-centos-71: virtual machine match the version of VirtualBox you have installed on
+I, [2015-10-18T12:05:37.749186 #14454]  INFO -- server-centos-71: your host and reload your VM.
+I, [2015-10-18T12:05:37.749197 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:05:37.749207 #14454]  INFO -- server-centos-71: Guest Additions Version: 5.0.6
+I, [2015-10-18T12:05:37.749217 #14454]  INFO -- server-centos-71: VirtualBox Version: 4.3
+I, [2015-10-18T12:05:37.749361 #14454]  INFO -- server-centos-71: [default] Setting hostname...
+I, [2015-10-18T12:05:42.942957 #14454]  INFO -- server-centos-71: [SSH] Established
+I, [2015-10-18T12:05:42.943299 #14454]  INFO -- server-centos-71: Vagrant instance <server-centos-71> created.
+I, [2015-10-18T12:05:42.944582 #14454]  INFO -- server-centos-71: Finished creating <server-centos-71> (0m34.26s).
+I, [2015-10-18T12:05:42.944687 #14454]  INFO -- server-centos-71: -----> Converging <server-centos-71>...
+I, [2015-10-18T12:05:42.945143 #14454]  INFO -- server-centos-71: Preparing files for transfer
+I, [2015-10-18T12:05:42.945211 #14454]  INFO -- server-centos-71: Preparing dna.json
+I, [2015-10-18T12:05:42.945408 #14454]  INFO -- server-centos-71: Resolving cookbook dependencies with Berkshelf 4.0.1...
+I, [2015-10-18T12:05:43.255085 #14454]  INFO -- server-centos-71: Removing non-cookbook files before transfer
+I, [2015-10-18T12:05:43.257629 #14454]  INFO -- server-centos-71: Preparing solo.rb
+I, [2015-10-18T12:05:43.386899 #14454]  INFO -- server-centos-71: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-10-18T12:05:43.394681 #14454]  INFO -- server-centos-71: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
+I, [2015-10-18T12:05:43.394736 #14454]  INFO -- server-centos-71: Trying wget...
+I, [2015-10-18T12:05:48.582721 #14454]  INFO -- server-centos-71: Download complete.
+I, [2015-10-18T12:05:48.767524 #14454]  INFO -- server-centos-71: Downloading Chef  for el...
+I, [2015-10-18T12:05:48.767586 #14454]  INFO -- server-centos-71: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=7&m=x86_64
+I, [2015-10-18T12:05:48.767600 #14454]  INFO -- server-centos-71:   to file /tmp/install.sh.8868/metadata.txt
+I, [2015-10-18T12:05:48.767610 #14454]  INFO -- server-centos-71: trying wget...
+I, [2015-10-18T12:05:54.220182 #14454]  INFO -- server-centos-71: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/7/x86_64/chef-12.5.1-1.el7.x86_64.rpm
+I, [2015-10-18T12:05:54.220244 #14454]  INFO -- server-centos-71: md5	9333136ba8a11bd6cad6d28fcd26a2c7
+I, [2015-10-18T12:05:54.220278 #14454]  INFO -- server-centos-71: sha256	7a937d8c0ab68a1f342aba4ad33417fc4ba8cb1a71f46e4a18b5e76c363e4075
+I, [2015-10-18T12:05:54.257201 #14454]  INFO -- server-centos-71: downloaded metadata file looks valid...
+I, [2015-10-18T12:05:54.386884 #14454]  INFO -- server-centos-71: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/7/x86_64/chef-12.5.1-1.el7.x86_64.rpm
+I, [2015-10-18T12:05:54.386958 #14454]  INFO -- server-centos-71:   to file /tmp/install.sh.8868/chef-12.5.1-1.el7.x86_64.rpm
+I, [2015-10-18T12:05:54.386982 #14454]  INFO -- server-centos-71: trying wget...
+I, [2015-10-18T12:07:18.392868 #14454]  INFO -- server-centos-71: Comparing checksum with sha256sum...
+I, [2015-10-18T12:07:18.594617 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:07:18.594682 #14454]  INFO -- server-centos-71: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-10-18T12:07:18.594696 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:07:18.594707 #14454]  INFO -- server-centos-71: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-10-18T12:07:18.594716 #14454]  INFO -- server-centos-71: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-10-18T12:07:18.594726 #14454]  INFO -- server-centos-71: be upgraded without warning on new releases, even to new major releases.
+I, [2015-10-18T12:07:18.594735 #14454]  INFO -- server-centos-71: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-10-18T12:07:18.594744 #14454]  INFO -- server-centos-71: CI/CD environments.
+I, [2015-10-18T12:07:18.594753 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:07:18.594762 #14454]  INFO -- server-centos-71: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-10-18T12:07:18.594771 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:07:18.594780 #14454]  INFO -- server-centos-71: Installing Chef 
+I, [2015-10-18T12:07:18.594789 #14454]  INFO -- server-centos-71: installing with rpm...
+I, [2015-10-18T12:07:18.642821 #14454]  INFO -- server-centos-71: warning: /tmp/install.sh.8868/chef-12.5.1-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2015-10-18T12:07:18.857365 #14454]  INFO -- server-centos-71: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2015-10-18T12:07:18.868333 #14454]  INFO -- server-centos-71: Updating / installing...
+I, [2015-10-18T12:07:23.903465 #14454]  INFO -- server-centos-71:                            (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 52%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2015-10-18T12:07:24.950574 #14454]  INFO -- server-centos-71: Thank you for installing Chef!
+I, [2015-10-18T12:07:25.120448 #14454]  INFO -- server-centos-71: Transferring files to <server-centos-71>
+I, [2015-10-18T12:07:28.311599 #14454]  INFO -- server-centos-71: Starting Chef Client, version 12.5.1
+I, [2015-10-18T12:07:34.287622 #14454]  INFO -- server-centos-71: Compiling Cookbooks...
+I, [2015-10-18T12:07:34.317553 #14454]  INFO -- server-centos-71: Converging 10 resources
+I, [2015-10-18T12:07:34.317619 #14454]  INFO -- server-centos-71: Recipe: selinux::_common
+I, [2015-10-18T12:08:24.911409 #14454]  INFO -- server-centos-71:  (up to date)
+I, [2015-10-18T12:08:24.922816 #14454]  INFO -- server-centos-71:  (up to date)
+I, [2015-10-18T12:08:24.922870 #14454]  INFO -- server-centos-71: Recipe: selinux::permissive
+I, [2015-10-18T12:08:24.939721 #14454]  INFO -- server-centos-71:  (up to date)
+I, [2015-10-18T12:08:24.939775 #14454]  INFO -- server-centos-71: Recipe: mongodb::repo
+I, [2015-10-18T12:08:24.939792 #14454]  INFO -- server-centos-71:   * yum_repository[mongodb] action create
+I, [2015-10-18T12:08:24.946889 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:24.946951 #14454]  INFO -- server-centos-71:       - create new file /etc/yum.repos.d/mongodb.repo
+I, [2015-10-18T12:08:24.946970 #14454]  INFO -- server-centos-71:       - update content in file /etc/yum.repos.d/mongodb.repo from none to 40cf0d
+I, [2015-10-18T12:08:24.946982 #14454]  INFO -- server-centos-71:       --- /etc/yum.repos.d/mongodb.repo	2015-10-18 19:08:23.168155078 +0000
+I, [2015-10-18T12:08:24.946993 #14454]  INFO -- server-centos-71:       +++ /etc/yum.repos.d/.mongodb.repo20151018-12176-yqg5r6	2015-10-18 19:08:23.168155078 +0000
+I, [2015-10-18T12:08:24.947003 #14454]  INFO -- server-centos-71:       @@ -1 +1,9 @@
+I, [2015-10-18T12:08:24.947022 #14454]  INFO -- server-centos-71:       +# This file was generated by Chef
+I, [2015-10-18T12:08:24.947033 #14454]  INFO -- server-centos-71:       +# Do NOT modify this file by hand.
+I, [2015-10-18T12:08:24.947042 #14454]  INFO -- server-centos-71:       +
+I, [2015-10-18T12:08:24.947052 #14454]  INFO -- server-centos-71:       +[mongodb]
+I, [2015-10-18T12:08:24.947071 #14454]  INFO -- server-centos-71:       +name=MongoDB Repository
+I, [2015-10-18T12:08:24.947080 #14454]  INFO -- server-centos-71:       +baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.0/x86_64/
+I, [2015-10-18T12:08:24.947127 #14454]  INFO -- server-centos-71:       +enabled=1
+I, [2015-10-18T12:08:24.947137 #14454]  INFO -- server-centos-71:       +gpgcheck=0
+I, [2015-10-18T12:08:25.009181 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:25.009254 #14454]  INFO -- server-centos-71:       - restore selinux security context
+I, [2015-10-18T12:08:25.248382 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:25.248448 #14454]  INFO -- server-centos-71:       - execute yum clean headers --disablerepo=* --enablerepo=mongodb
+I, [2015-10-18T12:08:36.378832 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:36.378891 #14454]  INFO -- server-centos-71:       - execute yum -q -y makecache --disablerepo=* --enablerepo=mongodb
+I, [2015-10-18T12:08:36.378910 #14454]  INFO -- server-centos-71:     * ruby_block[yum-cache-reload-mongodb] action create
+I, [2015-10-18T12:08:36.378923 #14454]  INFO -- server-centos-71:       - execute the ruby block yum-cache-reload-mongodb
+I, [2015-10-18T12:08:36.378935 #14454]  INFO -- server-centos-71:     * execute[yum clean headers mongodb] action nothing (skipped due to action :nothing)
+I, [2015-10-18T12:08:36.378954 #14454]  INFO -- server-centos-71:     * execute[yum-makecache-mongodb] action nothing (skipped due to action :nothing)
+I, [2015-10-18T12:08:36.378966 #14454]  INFO -- server-centos-71:     * ruby_block[yum-cache-reload-mongodb] action nothing (skipped due to action :nothing)
+I, [2015-10-18T12:08:36.378976 #14454]  INFO -- server-centos-71:   
+I, [2015-10-18T12:08:36.378985 #14454]  INFO -- server-centos-71: Recipe: mongodb::server
+I, [2015-10-18T12:08:47.138979 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:47.139065 #14454]  INFO -- server-centos-71:     - install version 3.0.7-1.el7 of package mongodb-org-server
+I, [2015-10-18T12:08:47.634436 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:47.634495 #14454]  INFO -- server-centos-71:     - start service service[mongod]
+I, [2015-10-18T12:08:47.893193 #14454]  INFO -- server-centos-71:  (up to date)
+I, [2015-10-18T12:08:48.151840 #14454]  INFO -- server-centos-71:  (up to date)
+I, [2015-10-18T12:08:48.862927 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:48.863000 #14454]  INFO -- server-centos-71:     - start service service[firewalld]
+I, [2015-10-18T12:08:49.300409 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:49.300467 #14454]  INFO -- server-centos-71:     - enable service service[firewalld]
+I, [2015-10-18T12:08:49.300486 #14454]  INFO -- server-centos-71:   * firewalld_port[27017/tcp] action add (up to date)
+I, [2015-10-18T12:08:50.362199 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:50.362257 #14454]  INFO -- server-centos-71:     - execute       firewall-cmd --zone=public --add-port=27017/tcp
+I, [2015-10-18T12:08:50.362287 #14454]  INFO -- server-centos-71:    firewall-cmd --permanent --zone=public --add-port=27017/tcp
+I, [2015-10-18T12:08:50.362315 #14454]  INFO -- server-centos-71:   
+I, [2015-10-18T12:08:50.370988 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:50.371057 #14454]  INFO -- server-centos-71:     - update content in file /etc/mongod.conf from 268f1a to d70673
+I, [2015-10-18T12:08:50.371095 #14454]  INFO -- server-centos-71:     --- /etc/mongod.conf	2015-10-13 03:25:49.000000000 +0000
+I, [2015-10-18T12:08:50.371110 #14454]  INFO -- server-centos-71:     +++ /etc/.mongod.conf20151018-12176-a2mqub	2015-10-18 19:08:48.602867722 +0000
+I, [2015-10-18T12:08:50.371135 #14454]  INFO -- server-centos-71:     @@ -26,7 +26,8 @@
+I, [2015-10-18T12:08:50.371145 #14454]  INFO -- server-centos-71:      # network interfaces
+I, [2015-10-18T12:08:50.371154 #14454]  INFO -- server-centos-71:      net:
+I, [2015-10-18T12:08:50.371174 #14454]  INFO -- server-centos-71: port: 27017
+I, [2015-10-18T12:08:50.371199 #14454]  INFO -- server-centos-71:     -  bindIp: 127.0.0.1  # Listen to local interface only, comment to listen on all interfaces.
+I, [2015-10-18T12:08:50.371211 #14454]  INFO -- server-centos-71:     +#  bindIp: 127.0.0.1  # Listen to local interface only, comment to listen on all interfaces.
+I, [2015-10-18T12:08:50.371222 #14454]  INFO -- server-centos-71:     +  bindIp: 127.0.0.1,10.0.2.15
+I, [2015-10-18T12:08:50.371232 #14454]  INFO -- server-centos-71:      
+I, [2015-10-18T12:08:50.371241 #14454]  INFO -- server-centos-71:      
+I, [2015-10-18T12:08:50.405521 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:50.405590 #14454]  INFO -- server-centos-71:     - restore selinux security context
+I, [2015-10-18T12:08:51.179763 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:51.179821 #14454]  INFO -- server-centos-71:     - restart service service[mongod]
+I, [2015-10-18T12:08:51.179840 #14454]  INFO -- server-centos-71: 
+I, [2015-10-18T12:08:51.179853 #14454]  INFO -- server-centos-71: Running handlers:
+I, [2015-10-18T12:08:51.179865 #14454]  INFO -- server-centos-71: Running handlers complete
+I, [2015-10-18T12:08:51.189885 #14454]  INFO -- server-centos-71: Chef Client finished, 12/21 resources updated in 01 minutes 22 seconds
+I, [2015-10-18T12:08:51.384130 #14454]  INFO -- server-centos-71: Finished converging <server-centos-71> (3m8.44s).
+I, [2015-10-18T12:08:51.384419 #14454]  INFO -- server-centos-71: -----> Setting up <server-centos-71>...
+I, [2015-10-18T12:08:51.385156 #14454]  INFO -- server-centos-71: Finished setting up <server-centos-71> (0m0.00s).
+I, [2015-10-18T12:08:51.385228 #14454]  INFO -- server-centos-71: -----> Verifying <server-centos-71>...
+I, [2015-10-18T12:08:51.385543 #14454]  INFO -- server-centos-71: Preparing files for transfer
+I, [2015-10-18T12:08:51.702347 #14454]  INFO -- server-centos-71: -----> Installing Busser (busser)
+I, [2015-10-18T12:08:57.851582 #14454]  INFO -- server-centos-71: Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem ( 17%)Fetching: thor-0.19.0.gem ( 35%)Fetching: thor-0.19.0.gem ( 53%)Fetching: thor-0.19.0.gem ( 71%)Fetching: thor-0.19.0.gem ( 89%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
+I, [2015-10-18T12:08:57.891323 #14454]  INFO -- server-centos-71: Successfully installed thor-0.19.0
+I, [2015-10-18T12:08:57.951555 #14454]  INFO -- server-centos-71: Fetching: busser-0.7.1.gemFetching: busser-0.7.1.gem ( 64%)Fetching: busser-0.7.1.gem (100%)Fetching: busser-0.7.1.gem (100%)
+I, [2015-10-18T12:08:57.975440 #14454]  INFO -- server-centos-71: Successfully installed busser-0.7.1
+I, [2015-10-18T12:08:57.975499 #14454]  INFO -- server-centos-71: 2 gems installed
+I, [2015-10-18T12:08:58.202419 #14454]  INFO -- server-centos-71: -----> Setting up Busser
+I, [2015-10-18T12:08:58.202486 #14454]  INFO -- server-centos-71: Creating BUSSER_ROOT in /tmp/verifier
+I, [2015-10-18T12:08:58.202508 #14454]  INFO -- server-centos-71: Creating busser binstub
+I, [2015-10-18T12:08:58.211808 #14454]  INFO -- server-centos-71: Installing Busser plugins: busser-bats busser-chefspec busser-serverspec
+I, [2015-10-18T12:09:05.176883 #14454]  INFO -- server-centos-71: Plugin bats installed (version 0.3.0)
+I, [2015-10-18T12:09:05.176962 #14454]  INFO -- server-centos-71: -----> Running postinstall for bats plugin
+I, [2015-10-18T12:09:05.205641 #14454]  INFO -- server-centos-71: Installed Bats to /tmp/verifier/vendor/bats/bin/bats
+I, [2015-10-18T12:09:05.560927 #14454]  INFO -- server-centos-71: /opt/chef/embedded/lib/ruby/site_ruby/2.1.0/rubygems/resolver/installer_set.rb:70:in `add_always_install': Unable to resolve dependency: user requested 'busser-chefspec (>= 0)' (Gem::UnsatisfiableDependencyError)
+I, [2015-10-18T12:09:05.560995 #14454]  INFO -- server-centos-71: 	from /opt/chef/embedded/lib/ruby/site_ruby/2.1.0/rubygems/dependency_installer.rb:473:in `resolve_dependencies'
+I, [2015-10-18T12:09:05.561024 #14454]  INFO -- server-centos-71: 	from /opt/chef/embedded/lib/ruby/site_ruby/2.1.0/rubygems/dependency_installer.rb:383:in `install'
+I, [2015-10-18T12:09:05.561036 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/rubygems.rb:44:in `install_gem'
+I, [2015-10-18T12:09:05.561048 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/command/plugin_install.rb:66:in `install_plugin_gem'
+I, [2015-10-18T12:09:05.561058 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/command/plugin_install.rb:53:in `install'
+I, [2015-10-18T12:09:05.561068 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/command/plugin_install.rb:43:in `block (2 levels) in install_all'
+I, [2015-10-18T12:09:05.561088 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/command/plugin_install.rb:43:in `each'
+I, [2015-10-18T12:09:05.561111 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/command/plugin_install.rb:43:in `block in install_all'
+I, [2015-10-18T12:09:05.561130 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/rubygems.rb:71:in `silence_gem_ui'
+I, [2015-10-18T12:09:05.561140 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/command/plugin_install.rb:42:in `install_all'
+I, [2015-10-18T12:09:05.561179 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/command.rb:27:in `run'
+I, [2015-10-18T12:09:05.561200 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:126:in `invoke_command'
+I, [2015-10-18T12:09:05.561220 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:133:in `block in invoke_all'
+I, [2015-10-18T12:09:05.561230 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:133:in `each'
+I, [2015-10-18T12:09:05.561262 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:133:in `map'
+I, [2015-10-18T12:09:05.561271 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:133:in `invoke_all'
+I, [2015-10-18T12:09:05.561280 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/group.rb:232:in `dispatch'
+I, [2015-10-18T12:09:05.561289 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:115:in `invoke'
+I, [2015-10-18T12:09:05.561298 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor.rb:40:in `block in register'
+I, [2015-10-18T12:09:05.561308 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/command.rb:27:in `run'
+I, [2015-10-18T12:09:05.561316 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:126:in `invoke_command'
+I, [2015-10-18T12:09:05.561325 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor.rb:359:in `dispatch'
+I, [2015-10-18T12:09:05.561334 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:115:in `invoke'
+I, [2015-10-18T12:09:05.561342 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor.rb:235:in `block in subcommand'
+I, [2015-10-18T12:09:05.561351 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/command.rb:27:in `run'
+I, [2015-10-18T12:09:05.561390 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:126:in `invoke_command'
+I, [2015-10-18T12:09:05.561400 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor.rb:359:in `dispatch'
+I, [2015-10-18T12:09:05.561408 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/base.rb:440:in `start'
+I, [2015-10-18T12:09:05.561417 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/gems/busser-0.7.1/bin/busser:8:in `<top (required)>'
+I, [2015-10-18T12:09:05.561425 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/bin/busser:23:in `load'
+I, [2015-10-18T12:09:05.561433 #14454]  INFO -- server-centos-71: 	from /tmp/verifier/gems/bin/busser:23:in `<main>'
+E, [2015-10-18T12:09:05.568291 #14454] ERROR -- server-centos-71: Verify failed on instance <server-centos-71>.
+E, [2015-10-18T12:09:05.568410 #14454] ERROR -- server-centos-71: ------Exception-------
+E, [2015-10-18T12:09:05.568438 #14454] ERROR -- server-centos-71: Class: Kitchen::ActionFailed
+E, [2015-10-18T12:09:05.568447 #14454] ERROR -- server-centos-71: Message: SSH exited (1) for command: [sh -c '
+
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+ruby="/opt/chef/embedded/bin/ruby"
+gem="/opt/chef/embedded/bin/gem"
+version="busser"
+gem_install_args="busser --no-rdoc --no-ri"
+busser="sudo -E /tmp/verifier/bin/busser"
+plugins="busser-bats busser-chefspec busser-serverspec"
+
+$gem list busser -i 2>&1 >/dev/null
+if test $? -ne 0; then
+  echo "-----> Installing Busser ($version)"
+  $gem install $gem_install_args
+else
+  echo "-----> Busser installation detected ($version)"
+fi
+
+if test ! -f "$BUSSER_ROOT/bin/busser"; then
+  gem_bindir=`$ruby -rrubygems -e "puts Gem.bindir"`
+  $gem_bindir/busser setup
+fi
+
+echo "       Installing Busser plugins: $plugins"
+$busser plugin install $plugins
+']
+E, [2015-10-18T12:09:05.568463 #14454] ERROR -- server-centos-71: ---Nested Exception---
+E, [2015-10-18T12:09:05.568473 #14454] ERROR -- server-centos-71: Class: Kitchen::Transport::SshFailed
+E, [2015-10-18T12:09:05.568481 #14454] ERROR -- server-centos-71: Message: SSH exited (1) for command: [sh -c '
+
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+ruby="/opt/chef/embedded/bin/ruby"
+gem="/opt/chef/embedded/bin/gem"
+version="busser"
+gem_install_args="busser --no-rdoc --no-ri"
+busser="sudo -E /tmp/verifier/bin/busser"
+plugins="busser-bats busser-chefspec busser-serverspec"
+
+$gem list busser -i 2>&1 >/dev/null
+if test $? -ne 0; then
+  echo "-----> Installing Busser ($version)"
+  $gem install $gem_install_args
+else
+  echo "-----> Busser installation detected ($version)"
+fi
+
+if test ! -f "$BUSSER_ROOT/bin/busser"; then
+  gem_bindir=`$ruby -rrubygems -e "puts Gem.bindir"`
+  $gem_bindir/busser setup
+fi
+
+echo "       Installing Busser plugins: $plugins"
+$busser plugin install $plugins
+']
+E, [2015-10-18T12:09:05.568489 #14454] ERROR -- server-centos-71: ------Backtrace-------
+E, [2015-10-18T12:09:05.568496 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/verifier/base.rb:79:in `rescue in call'
+E, [2015-10-18T12:09:05.568504 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/verifier/base.rb:82:in `call'
+E, [2015-10-18T12:09:05.568511 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:398:in `block in verify_action'
+E, [2015-10-18T12:09:05.568519 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:488:in `call'
+E, [2015-10-18T12:09:05.568537 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:488:in `synchronize_or_call'
+E, [2015-10-18T12:09:05.568545 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:453:in `block in action'
+E, [2015-10-18T12:09:05.568553 #14454] ERROR -- server-centos-71: /usr/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-10-18T12:09:05.568570 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:452:in `action'
+E, [2015-10-18T12:09:05.568577 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:394:in `verify_action'
+E, [2015-10-18T12:09:05.568585 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:341:in `block in transition_to'
+E, [2015-10-18T12:09:05.568593 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:340:in `each'
+E, [2015-10-18T12:09:05.568600 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:340:in `transition_to'
+E, [2015-10-18T12:09:05.568607 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2015-10-18T12:09:05.568615 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-10-18T12:09:05.568623 #14454] ERROR -- server-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-10-18T12:09:05.568630 #14454] ERROR -- server-centos-71: ----------------------
