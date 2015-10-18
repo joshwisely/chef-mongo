@@ -1,148 +1,66 @@
-I, [2015-10-18T05:38:16.871301 #10928]  INFO -- server-centos-71: -----> Cleaning up any prior instances of <server-centos-71>
-I, [2015-10-18T05:38:16.871370 #10928]  INFO -- server-centos-71: -----> Destroying <server-centos-71>...
-I, [2015-10-18T05:38:16.871561 #10928]  INFO -- server-centos-71: Finished destroying <server-centos-71> (0m0.00s).
-I, [2015-10-18T05:38:16.871639 #10928]  INFO -- server-centos-71: -----> Testing <server-centos-71>
-I, [2015-10-18T05:38:16.871690 #10928]  INFO -- server-centos-71: -----> Creating <server-centos-71>...
-I, [2015-10-18T05:38:17.059435 #10928]  INFO -- server-centos-71: Bringing machine 'default' up with 'virtualbox' provider...
-I, [2015-10-18T05:38:17.140044 #10928]  INFO -- server-centos-71: [default] Importing base box 'opscode-centos-7.1'...
-I, [2015-10-18T05:38:24.567959 #10928]  INFO -- server-centos-71: Progress: 20%Progress: 50%Progress: 70%Progress: 90%[default] Matching MAC address for NAT networking...
-I, [2015-10-18T05:38:24.892152 #10928]  INFO -- server-centos-71: [default] Setting the name of the VM...
-I, [2015-10-18T05:38:24.984278 #10928]  INFO -- server-centos-71: [default] Clearing any previously set forwarded ports...
-I, [2015-10-18T05:38:25.094710 #10928]  INFO -- server-centos-71: [default] Clearing any previously set network interfaces...
-I, [2015-10-18T05:38:25.140598 #10928]  INFO -- server-centos-71: [default] Preparing network interfaces based on configuration...
-I, [2015-10-18T05:38:25.189864 #10928]  INFO -- server-centos-71: [default] Forwarding ports...
-I, [2015-10-18T05:38:25.224661 #10928]  INFO -- server-centos-71: [default] -- 22 => 2222 (adapter 1)
-I, [2015-10-18T05:38:25.447349 #10928]  INFO -- server-centos-71: [default] Booting VM...
-I, [2015-10-18T05:38:25.633755 #10928]  INFO -- server-centos-71: [default] Waiting for machine to boot. This may take a few minutes...
-I, [2015-10-18T05:38:41.636904 #10928]  INFO -- server-centos-71: [default] Machine booted and ready!
-I, [2015-10-18T05:38:41.665483 #10928]  INFO -- server-centos-71: [default] The guest additions on this VM do not match the installed version of
-I, [2015-10-18T05:38:41.665541 #10928]  INFO -- server-centos-71: VirtualBox! In most cases this is fine, but in rare cases it can
-I, [2015-10-18T05:38:41.665566 #10928]  INFO -- server-centos-71: prevent things such as shared folders from working properly. If you see
-I, [2015-10-18T05:38:41.665577 #10928]  INFO -- server-centos-71: shared folder errors, please make sure the guest additions within the
-I, [2015-10-18T05:38:41.665588 #10928]  INFO -- server-centos-71: virtual machine match the version of VirtualBox you have installed on
-I, [2015-10-18T05:38:41.665598 #10928]  INFO -- server-centos-71: your host and reload your VM.
-I, [2015-10-18T05:38:41.665608 #10928]  INFO -- server-centos-71: 
-I, [2015-10-18T05:38:41.665618 #10928]  INFO -- server-centos-71: Guest Additions Version: 5.0.6
-I, [2015-10-18T05:38:41.665627 #10928]  INFO -- server-centos-71: VirtualBox Version: 4.3
-I, [2015-10-18T05:38:41.665795 #10928]  INFO -- server-centos-71: [default] Setting hostname...
-I, [2015-10-18T05:38:45.774961 #10928]  INFO -- server-centos-71: [SSH] Established
-I, [2015-10-18T05:38:45.775253 #10928]  INFO -- server-centos-71: Vagrant instance <server-centos-71> created.
-I, [2015-10-18T05:38:45.775840 #10928]  INFO -- server-centos-71: Finished creating <server-centos-71> (0m28.90s).
-I, [2015-10-18T05:38:45.775922 #10928]  INFO -- server-centos-71: -----> Converging <server-centos-71>...
-I, [2015-10-18T05:38:45.776294 #10928]  INFO -- server-centos-71: Preparing files for transfer
-I, [2015-10-18T05:38:45.776348 #10928]  INFO -- server-centos-71: Preparing dna.json
-I, [2015-10-18T05:38:45.776527 #10928]  INFO -- server-centos-71: Resolving cookbook dependencies with Berkshelf 4.0.1...
-I, [2015-10-18T05:38:45.850017 #10928]  INFO -- server-centos-71: Removing non-cookbook files before transfer
-I, [2015-10-18T05:38:45.852020 #10928]  INFO -- server-centos-71: Preparing solo.rb
-I, [2015-10-18T05:38:45.954886 #10928]  INFO -- server-centos-71: -----> Installing Chef Omnibus (install only if missing)
-I, [2015-10-18T05:38:45.955089 #10928]  INFO -- server-centos-71: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
-I, [2015-10-18T05:38:45.955119 #10928]  INFO -- server-centos-71: Trying wget...
-I, [2015-10-18T05:38:51.199981 #10928]  INFO -- server-centos-71: Download complete.
-I, [2015-10-18T05:38:51.379971 #10928]  INFO -- server-centos-71: Downloading Chef  for el...
-I, [2015-10-18T05:38:51.380022 #10928]  INFO -- server-centos-71: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=7&m=x86_64
-I, [2015-10-18T05:38:51.380036 #10928]  INFO -- server-centos-71:   to file /tmp/install.sh.8867/metadata.txt
-I, [2015-10-18T05:38:51.380046 #10928]  INFO -- server-centos-71: trying wget...
-I, [2015-10-18T05:38:51.593625 #10928]  INFO -- server-centos-71: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/7/x86_64/chef-12.5.1-1.el7.x86_64.rpm
-I, [2015-10-18T05:38:51.593682 #10928]  INFO -- server-centos-71: md5	9333136ba8a11bd6cad6d28fcd26a2c7
-I, [2015-10-18T05:38:51.593698 #10928]  INFO -- server-centos-71: sha256	7a937d8c0ab68a1f342aba4ad33417fc4ba8cb1a71f46e4a18b5e76c363e4075
-I, [2015-10-18T05:38:51.636537 #10928]  INFO -- server-centos-71: downloaded metadata file looks valid...
-I, [2015-10-18T05:38:51.764521 #10928]  INFO -- server-centos-71: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/7/x86_64/chef-12.5.1-1.el7.x86_64.rpm
-I, [2015-10-18T05:38:51.764639 #10928]  INFO -- server-centos-71:   to file /tmp/install.sh.8867/chef-12.5.1-1.el7.x86_64.rpm
-I, [2015-10-18T05:38:51.764687 #10928]  INFO -- server-centos-71: trying wget...
-I, [2015-10-18T05:39:20.552634 #10928]  INFO -- server-centos-71: Comparing checksum with sha256sum...
-I, [2015-10-18T05:39:20.752298 #10928]  INFO -- server-centos-71: 
-I, [2015-10-18T05:39:20.752360 #10928]  INFO -- server-centos-71: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-I, [2015-10-18T05:39:20.752374 #10928]  INFO -- server-centos-71: 
-I, [2015-10-18T05:39:20.752385 #10928]  INFO -- server-centos-71: You are installing an omnibus package without a version pin.  If you are installing
-I, [2015-10-18T05:39:20.752395 #10928]  INFO -- server-centos-71: on production servers via an automated process this is DANGEROUS and you will
-I, [2015-10-18T05:39:20.752406 #10928]  INFO -- server-centos-71: be upgraded without warning on new releases, even to new major releases.
-I, [2015-10-18T05:39:20.752416 #10928]  INFO -- server-centos-71: Letting the version float is only appropriate in desktop, test, development or
-I, [2015-10-18T05:39:20.752426 #10928]  INFO -- server-centos-71: CI/CD environments.
-I, [2015-10-18T05:39:20.752436 #10928]  INFO -- server-centos-71: 
-I, [2015-10-18T05:39:20.752445 #10928]  INFO -- server-centos-71: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-I, [2015-10-18T05:39:20.752455 #10928]  INFO -- server-centos-71: 
-I, [2015-10-18T05:39:20.752464 #10928]  INFO -- server-centos-71: Installing Chef 
-I, [2015-10-18T05:39:20.752483 #10928]  INFO -- server-centos-71: installing with rpm...
-I, [2015-10-18T05:39:20.791461 #10928]  INFO -- server-centos-71: warning: /tmp/install.sh.8867/chef-12.5.1-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
-I, [2015-10-18T05:39:20.945623 #10928]  INFO -- server-centos-71: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
-I, [2015-10-18T05:39:20.956209 #10928]  INFO -- server-centos-71: Updating / installing...
-I, [2015-10-18T05:39:24.816782 #10928]  INFO -- server-centos-71:                            (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 52%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
-I, [2015-10-18T05:39:25.422599 #10928]  INFO -- server-centos-71: Thank you for installing Chef!
-I, [2015-10-18T05:39:25.559670 #10928]  INFO -- server-centos-71: Transferring files to <server-centos-71>
-I, [2015-10-18T05:39:28.056566 #10928]  INFO -- server-centos-71: Starting Chef Client, version 12.5.1
-I, [2015-10-18T05:39:33.970898 #10928]  INFO -- server-centos-71: Compiling Cookbooks...
-I, [2015-10-18T05:39:33.986981 #10928]  INFO -- server-centos-71: Converging 6 resources
-I, [2015-10-18T05:39:33.987044 #10928]  INFO -- server-centos-71: Recipe: selinux::_common
-I, [2015-10-18T05:40:10.063724 #10928]  INFO -- server-centos-71:  (up to date)
-I, [2015-10-18T05:40:10.065343 #10928]  INFO -- server-centos-71:  (up to date)
-I, [2015-10-18T05:40:10.065372 #10928]  INFO -- server-centos-71: Recipe: selinux::permissive
-I, [2015-10-18T05:40:10.087905 #10928]  INFO -- server-centos-71:  (up to date)
-I, [2015-10-18T05:40:10.088056 #10928]  INFO -- server-centos-71: Recipe: mongodb::repo
-I, [2015-10-18T05:40:10.088079 #10928]  INFO -- server-centos-71:   * yum_repository[mongodb] action create
-I, [2015-10-18T05:40:10.098412 #10928]  INFO -- server-centos-71: 
-I, [2015-10-18T05:40:10.098478 #10928]  INFO -- server-centos-71:       - create new file /etc/yum.repos.d/mongodb.repo
-I, [2015-10-18T05:40:10.098492 #10928]  INFO -- server-centos-71:       - update content in file /etc/yum.repos.d/mongodb.repo from none to 40cf0d
-I, [2015-10-18T05:40:10.098502 #10928]  INFO -- server-centos-71:       --- /etc/yum.repos.d/mongodb.repo	2015-10-18 12:40:08.177354774 +0000
-I, [2015-10-18T05:40:10.098511 #10928]  INFO -- server-centos-71:       +++ /etc/yum.repos.d/.mongodb.repo20151018-12173-3lskqj	2015-10-18 12:40:08.176354275 +0000
-I, [2015-10-18T05:40:10.098520 #10928]  INFO -- server-centos-71:       @@ -1 +1,9 @@
-I, [2015-10-18T05:40:10.098529 #10928]  INFO -- server-centos-71:       +# This file was generated by Chef
-I, [2015-10-18T05:40:10.098537 #10928]  INFO -- server-centos-71:       +# Do NOT modify this file by hand.
-I, [2015-10-18T05:40:10.098546 #10928]  INFO -- server-centos-71:       +
-I, [2015-10-18T05:40:10.098565 #10928]  INFO -- server-centos-71:       +[mongodb]
-I, [2015-10-18T05:40:10.098585 #10928]  INFO -- server-centos-71:       +name=MongoDB Repository
-I, [2015-10-18T05:40:10.098595 #10928]  INFO -- server-centos-71:       +baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.0/x86_64/
-I, [2015-10-18T05:40:10.098613 #10928]  INFO -- server-centos-71:       +enabled=1
-I, [2015-10-18T05:40:10.098622 #10928]  INFO -- server-centos-71:       +gpgcheck=0
-I, [2015-10-18T05:40:10.145801 #10928]  INFO -- server-centos-71: 
-I, [2015-10-18T05:40:10.145869 #10928]  INFO -- server-centos-71:       - restore selinux security context
-I, [2015-10-18T05:40:10.333498 #10928]  INFO -- server-centos-71: 
-I, [2015-10-18T05:40:10.333558 #10928]  INFO -- server-centos-71:       - execute yum clean headers --disablerepo=* --enablerepo=mongodb
-I, [2015-10-18T05:40:21.054298 #10928]  INFO -- server-centos-71: 
-I, [2015-10-18T05:40:21.054355 #10928]  INFO -- server-centos-71:       - execute yum -q -y makecache --disablerepo=* --enablerepo=mongodb
-I, [2015-10-18T05:40:21.054380 #10928]  INFO -- server-centos-71:     * ruby_block[yum-cache-reload-mongodb] action create
-I, [2015-10-18T05:40:21.054392 #10928]  INFO -- server-centos-71:       - execute the ruby block yum-cache-reload-mongodb
-I, [2015-10-18T05:40:21.054402 #10928]  INFO -- server-centos-71:     * execute[yum clean headers mongodb] action nothing (skipped due to action :nothing)
-I, [2015-10-18T05:40:21.054412 #10928]  INFO -- server-centos-71:     * execute[yum-makecache-mongodb] action nothing (skipped due to action :nothing)
-I, [2015-10-18T05:40:21.054420 #10928]  INFO -- server-centos-71:     * ruby_block[yum-cache-reload-mongodb] action nothing (skipped due to action :nothing)
-I, [2015-10-18T05:40:21.054429 #10928]  INFO -- server-centos-71:   
-I, [2015-10-18T05:40:21.054438 #10928]  INFO -- server-centos-71: Recipe: mongodb::server
-I, [2015-10-18T05:40:29.429017 #10928]  INFO -- server-centos-71: 
-I, [2015-10-18T05:40:29.429177 #10928]  INFO -- server-centos-71:     - install version 3.0.7-1.el7 of package mongodb-org-server
-I, [2015-10-18T05:40:29.914413 #10928]  INFO -- server-centos-71: 
-I, [2015-10-18T05:40:29.914469 #10928]  INFO -- server-centos-71:     - start service service[mongod]
-I, [2015-10-18T05:40:30.172417 #10928]  INFO -- server-centos-71:  (up to date)
-I, [2015-10-18T05:40:30.172479 #10928]  INFO -- server-centos-71: 
-I, [2015-10-18T05:40:30.172492 #10928]  INFO -- server-centos-71: Running handlers:
-I, [2015-10-18T05:40:30.172503 #10928]  INFO -- server-centos-71: Running handlers complete
-I, [2015-10-18T05:40:30.172513 #10928]  INFO -- server-centos-71: Chef Client finished, 7/14 resources updated in 01 minutes 02 seconds
-I, [2015-10-18T05:40:30.283194 #10928]  INFO -- server-centos-71: Finished converging <server-centos-71> (1m44.51s).
-I, [2015-10-18T05:40:30.283324 #10928]  INFO -- server-centos-71: -----> Setting up <server-centos-71>...
-I, [2015-10-18T05:40:30.284312 #10928]  INFO -- server-centos-71: Finished setting up <server-centos-71> (0m0.00s).
-I, [2015-10-18T05:40:30.284462 #10928]  INFO -- server-centos-71: -----> Verifying <server-centos-71>...
-I, [2015-10-18T05:40:30.284844 #10928]  INFO -- server-centos-71: Preparing files for transfer
-I, [2015-10-18T05:40:30.579564 #10928]  INFO -- server-centos-71: -----> Installing Busser (busser)
-I, [2015-10-18T05:40:36.741419 #10928]  INFO -- server-centos-71: Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem ( 18%)Fetching: thor-0.19.0.gem ( 35%)Fetching: thor-0.19.0.gem ( 53%)Fetching: thor-0.19.0.gem ( 71%)Fetching: thor-0.19.0.gem ( 89%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
-I, [2015-10-18T05:40:36.772716 #10928]  INFO -- server-centos-71: Successfully installed thor-0.19.0
-I, [2015-10-18T05:40:36.821247 #10928]  INFO -- server-centos-71: Fetching: busser-0.7.1.gemFetching: busser-0.7.1.gem ( 64%)Fetching: busser-0.7.1.gem (100%)Fetching: busser-0.7.1.gem (100%)
-I, [2015-10-18T05:40:36.855213 #10928]  INFO -- server-centos-71: Successfully installed busser-0.7.1
-I, [2015-10-18T05:40:36.855283 #10928]  INFO -- server-centos-71: 2 gems installed
-I, [2015-10-18T05:40:37.096622 #10928]  INFO -- server-centos-71: -----> Setting up Busser
-I, [2015-10-18T05:40:37.096697 #10928]  INFO -- server-centos-71: Creating BUSSER_ROOT in /tmp/verifier
-I, [2015-10-18T05:40:37.096726 #10928]  INFO -- server-centos-71: Creating busser binstub
-I, [2015-10-18T05:40:37.104706 #10928]  INFO -- server-centos-71: Installing Busser plugins: busser-bats
-I, [2015-10-18T05:40:44.560801 #10928]  INFO -- server-centos-71: Plugin bats installed (version 0.3.0)
-I, [2015-10-18T05:40:44.560863 #10928]  INFO -- server-centos-71: -----> Running postinstall for bats plugin
-I, [2015-10-18T05:40:44.584699 #10928]  INFO -- server-centos-71: Installed Bats to /tmp/verifier/vendor/bats/bin/bats
-I, [2015-10-18T05:40:44.917773 #10928]  INFO -- server-centos-71: Suite path directory /tmp/verifier/suites does not exist, skipping.
-I, [2015-10-18T05:40:44.922058 #10928]  INFO -- server-centos-71: Transferring files to <server-centos-71>
-I, [2015-10-18T05:40:45.264923 #10928]  INFO -- server-centos-71: -----> Running bats test suite
-I, [2015-10-18T05:40:45.311681 #10928]  INFO -- server-centos-71: [1G   mongod binary is found in PATH[K[77G1/1[2G[1G ✓ mongod binary is found in PATH[K
-I, [2015-10-18T05:40:45.311734 #10928]  INFO -- server-centos-71: [0m
-I, [2015-10-18T05:40:45.311746 #10928]  INFO -- server-centos-71: 1 test, 0 failures
-I, [2015-10-18T05:40:45.322497 #10928]  INFO -- server-centos-71: Finished verifying <server-centos-71> (0m15.04s).
-I, [2015-10-18T05:40:45.322862 #10928]  INFO -- server-centos-71: -----> Destroying <server-centos-71>...
-I, [2015-10-18T05:40:46.004487 #10928]  INFO -- server-centos-71: [default] Forcing shutdown of VM...
-I, [2015-10-18T05:40:47.094853 #10928]  INFO -- server-centos-71: [default] Destroying VM and associated drives...
-I, [2015-10-18T05:40:47.426983 #10928]  INFO -- server-centos-71: Vagrant instance <server-centos-71> destroyed.
-I, [2015-10-18T05:40:47.427741 #10928]  INFO -- server-centos-71: Finished destroying <server-centos-71> (0m2.10s).
-I, [2015-10-18T05:40:47.427859 #10928]  INFO -- server-centos-71: Finished testing <server-centos-71> (2m30.56s).
+I, [2015-10-18T05:57:34.761266 #18683]  INFO -- server-centos-71: -----> Converging <server-centos-71>...
+I, [2015-10-18T05:57:34.761564 #18683]  INFO -- server-centos-71: Preparing files for transfer
+I, [2015-10-18T05:57:34.761614 #18683]  INFO -- server-centos-71: Preparing dna.json
+I, [2015-10-18T05:57:34.761738 #18683]  INFO -- server-centos-71: Resolving cookbook dependencies with Berkshelf 4.0.1...
+I, [2015-10-18T05:57:34.906269 #18683]  INFO -- server-centos-71: Removing non-cookbook files before transfer
+I, [2015-10-18T05:57:34.908209 #18683]  INFO -- server-centos-71: Preparing solo.rb
+I, [2015-10-18T05:57:35.258948 #18683]  INFO -- server-centos-71: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-10-18T05:57:35.377273 #18683]  INFO -- server-centos-71: Transferring files to <server-centos-71>
+I, [2015-10-18T05:57:38.858463 #18683]  INFO -- server-centos-71: Starting Chef Client, version 12.5.1
+I, [2015-10-18T05:57:44.937269 #18683]  INFO -- server-centos-71: Compiling Cookbooks...
+I, [2015-10-18T05:57:44.983554 #18683]  INFO -- server-centos-71: Converging 9 resources
+I, [2015-10-18T05:57:44.983609 #18683]  INFO -- server-centos-71: Recipe: selinux::_common
+I, [2015-10-18T05:57:46.659646 #18683]  INFO -- server-centos-71:  (up to date)
+I, [2015-10-18T05:57:46.659703 #18683]  INFO -- server-centos-71:   * directory[/etc/selinux] action create (up to date)
+I, [2015-10-18T05:57:46.659718 #18683]  INFO -- server-centos-71: Recipe: selinux::permissive
+I, [2015-10-18T05:57:46.697411 #18683]  INFO -- server-centos-71:  (up to date)
+I, [2015-10-18T05:57:46.697471 #18683]  INFO -- server-centos-71: Recipe: mongodb::repo
+I, [2015-10-18T05:57:46.697485 #18683]  INFO -- server-centos-71:   * yum_repository[mongodb] action create
+I, [2015-10-18T05:57:46.712995 #18683]  INFO -- server-centos-71:  (up to date)
+I, [2015-10-18T05:57:46.713053 #18683]  INFO -- server-centos-71:     * execute[yum clean headers mongodb] action nothing (skipped due to action :nothing)
+I, [2015-10-18T05:57:46.713067 #18683]  INFO -- server-centos-71:     * execute[yum-makecache-mongodb] action nothing (skipped due to action :nothing)
+I, [2015-10-18T05:57:46.713077 #18683]  INFO -- server-centos-71:     * ruby_block[yum-cache-reload-mongodb] action nothing (skipped due to action :nothing)
+I, [2015-10-18T05:57:46.713087 #18683]  INFO -- server-centos-71:      (up to date)
+I, [2015-10-18T05:57:46.713095 #18683]  INFO -- server-centos-71: Recipe: mongodb::server
+I, [2015-10-18T05:57:46.713104 #18683]  INFO -- server-centos-71:   * yum_package[mongodb-org-server] action install (up to date)
+I, [2015-10-18T05:57:47.061663 #18683]  INFO -- server-centos-71:  (up to date)
+I, [2015-10-18T05:57:47.352522 #18683]  INFO -- server-centos-71:  (up to date)
+I, [2015-10-18T05:57:47.671339 #18683]  INFO -- server-centos-71:  (up to date)
+I, [2015-10-18T05:57:48.503001 #18683]  INFO -- server-centos-71: 
+I, [2015-10-18T05:57:48.503207 #18683]  INFO -- server-centos-71:     - start service service[firewalld]
+I, [2015-10-18T05:57:49.159815 #18683]  INFO -- server-centos-71: 
+I, [2015-10-18T05:57:49.159898 #18683]  INFO -- server-centos-71:     - enable service service[firewalld]
+I, [2015-10-18T05:57:49.159924 #18683]  INFO -- server-centos-71:   * firewalld_port[27017/tcp] action add (up to date)
+I, [2015-10-18T05:57:50.361218 #18683]  INFO -- server-centos-71: 
+I, [2015-10-18T05:57:50.361280 #18683]  INFO -- server-centos-71:     - execute       firewall-cmd --zone=public --add-port=27017/tcp
+I, [2015-10-18T05:57:50.361323 #18683]  INFO -- server-centos-71:    firewall-cmd --permanent --zone=public --add-port=27017/tcp
+I, [2015-10-18T05:57:50.361339 #18683]  INFO -- server-centos-71:   
+I, [2015-10-18T05:57:50.361362 #18683]  INFO -- server-centos-71: 
+I, [2015-10-18T05:57:50.361372 #18683]  INFO -- server-centos-71: Running handlers:
+I, [2015-10-18T05:57:50.361381 #18683]  INFO -- server-centos-71: Running handlers complete
+I, [2015-10-18T05:57:50.361391 #18683]  INFO -- server-centos-71: Chef Client finished, 3/16 resources updated in 11 seconds
+I, [2015-10-18T05:57:50.494650 #18683]  INFO -- server-centos-71: Finished converging <server-centos-71> (0m15.73s).
+I, [2015-10-18T05:57:50.494738 #18683]  INFO -- server-centos-71: -----> Setting up <server-centos-71>...
+I, [2015-10-18T05:57:50.495330 #18683]  INFO -- server-centos-71: Finished setting up <server-centos-71> (0m0.00s).
+I, [2015-10-18T05:57:50.495395 #18683]  INFO -- server-centos-71: -----> Verifying <server-centos-71>...
+I, [2015-10-18T05:57:50.495664 #18683]  INFO -- server-centos-71: Preparing files for transfer
+I, [2015-10-18T05:57:50.789422 #18683]  INFO -- server-centos-71: -----> Installing Busser (busser)
+I, [2015-10-18T05:57:57.018331 #18683]  INFO -- server-centos-71: Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem ( 18%)Fetching: thor-0.19.0.gem ( 35%)Fetching: thor-0.19.0.gem ( 53%)Fetching: thor-0.19.0.gem ( 71%)Fetching: thor-0.19.0.gem ( 89%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
+I, [2015-10-18T05:57:57.062052 #18683]  INFO -- server-centos-71: Successfully installed thor-0.19.0
+I, [2015-10-18T05:57:57.103898 #18683]  INFO -- server-centos-71: Fetching: busser-0.7.1.gemFetching: busser-0.7.1.gem ( 64%)Fetching: busser-0.7.1.gem (100%)Fetching: busser-0.7.1.gem (100%)
+I, [2015-10-18T05:57:57.139178 #18683]  INFO -- server-centos-71: Successfully installed busser-0.7.1
+I, [2015-10-18T05:57:57.139233 #18683]  INFO -- server-centos-71: 2 gems installed
+I, [2015-10-18T05:57:57.386662 #18683]  INFO -- server-centos-71: -----> Setting up Busser
+I, [2015-10-18T05:57:57.386720 #18683]  INFO -- server-centos-71: Creating BUSSER_ROOT in /tmp/verifier
+I, [2015-10-18T05:57:57.386737 #18683]  INFO -- server-centos-71: Creating busser binstub
+I, [2015-10-18T05:57:57.391533 #18683]  INFO -- server-centos-71: Installing Busser plugins: busser-bats
+I, [2015-10-18T05:58:21.897590 #18683]  INFO -- server-centos-71: Plugin bats installed (version 0.3.0)
+I, [2015-10-18T05:58:21.897660 #18683]  INFO -- server-centos-71: -----> Running postinstall for bats plugin
+I, [2015-10-18T05:58:21.922917 #18683]  INFO -- server-centos-71: Installed Bats to /tmp/verifier/vendor/bats/bin/bats
+I, [2015-10-18T05:58:22.295474 #18683]  INFO -- server-centos-71: Suite path directory /tmp/verifier/suites does not exist, skipping.
+I, [2015-10-18T05:58:22.303399 #18683]  INFO -- server-centos-71: Transferring files to <server-centos-71>
+I, [2015-10-18T05:58:22.692485 #18683]  INFO -- server-centos-71: -----> Running bats test suite
+I, [2015-10-18T05:58:22.750695 #18683]  INFO -- server-centos-71: [1G   mongod binary is found in PATH[K[77G1/1[2G[1G ✓ mongod binary is found in PATH[K
+I, [2015-10-18T05:58:22.750749 #18683]  INFO -- server-centos-71: [0m
+I, [2015-10-18T05:58:22.750762 #18683]  INFO -- server-centos-71: 1 test, 0 failures
+I, [2015-10-18T05:58:22.762490 #18683]  INFO -- server-centos-71: Finished verifying <server-centos-71> (0m32.27s).
