@@ -1,3 +1,3 @@
-I, [2015-10-18T07:03:51.175010 #22791]  INFO -- Kitchen: -----> Starting Kitchen (v1.4.2)
-I, [2015-10-18T07:03:51.511230 #22791]  INFO -- Kitchen: -----> Verifying <server-centos-71>...
-I, [2015-10-18T07:03:59.078430 #22791]  INFO -- Kitchen: -----> Kitchen is finished. (0m7.90s)
+I, [2015-10-18T10:53:36.328856 #3237]  INFO -- Kitchen: -----> Starting Kitchen (v1.4.2)
+I, [2015-10-18T10:53:36.672481 #3237]  INFO -- Kitchen: -----> Converging <tools-centos-65>...
+E, [2015-10-18T10:53:43.102730 #3237] ERROR -- Kitchen: Converge failed on instance <tools-centos-65>.
