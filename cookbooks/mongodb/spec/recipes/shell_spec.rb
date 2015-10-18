@@ -1,4 +1,4 @@
-require_relative './spec_helper'
+require_relative '../spec_helper'
 
 describe 'mongodb::shell' do
   let(:chef_run) { ChefSpec::SoloRunner.converge(described_recipe) }
