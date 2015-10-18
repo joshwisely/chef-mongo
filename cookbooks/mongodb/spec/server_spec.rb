@@ -1,7 +1,7 @@
 require_relative './spec_helper'
 
 describe 'mongodb::server' do
-  let(:chef_run) { ChefSpec::SoloRunner.converge(described_recipe) }
+  let(:chef_run) { ChefSpec::SoloRunner.converge('mongodb::server') }
 
   it 'installs mongodb-org-server' do
     expect(chef_run).to install_package('mongodb-org-server')
