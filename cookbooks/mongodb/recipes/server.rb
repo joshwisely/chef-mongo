@@ -15,3 +15,7 @@ service "mongod" do
   action [:start, :enable]
 end
 
+firewalld_port '27017/tcp' do
+  action :add
+  zone   'public'
+end

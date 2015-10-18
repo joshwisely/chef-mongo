@@ -1,0 +1,138 @@
+I, [2015-10-18T05:40:47.427928 #10928]  INFO -- shell-centos-71: -----> Cleaning up any prior instances of <shell-centos-71>
+I, [2015-10-18T05:40:47.427997 #10928]  INFO -- shell-centos-71: -----> Destroying <shell-centos-71>...
+I, [2015-10-18T05:40:47.428258 #10928]  INFO -- shell-centos-71: Finished destroying <shell-centos-71> (0m0.00s).
+I, [2015-10-18T05:40:47.428411 #10928]  INFO -- shell-centos-71: -----> Testing <shell-centos-71>
+I, [2015-10-18T05:40:47.428475 #10928]  INFO -- shell-centos-71: -----> Creating <shell-centos-71>...
+I, [2015-10-18T05:40:47.623649 #10928]  INFO -- shell-centos-71: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-10-18T05:40:47.704313 #10928]  INFO -- shell-centos-71: [default] Importing base box 'opscode-centos-7.1'...
+I, [2015-10-18T05:40:55.274114 #10928]  INFO -- shell-centos-71: Progress: 20%Progress: 50%Progress: 70%Progress: 90%[default] Matching MAC address for NAT networking...
+I, [2015-10-18T05:40:55.585955 #10928]  INFO -- shell-centos-71: [default] Setting the name of the VM...
+I, [2015-10-18T05:40:55.672475 #10928]  INFO -- shell-centos-71: [default] Clearing any previously set forwarded ports...
+I, [2015-10-18T05:40:55.787868 #10928]  INFO -- shell-centos-71: [default] Clearing any previously set network interfaces...
+I, [2015-10-18T05:40:55.832970 #10928]  INFO -- shell-centos-71: [default] Preparing network interfaces based on configuration...
+I, [2015-10-18T05:40:55.904870 #10928]  INFO -- shell-centos-71: [default] Forwarding ports...
+I, [2015-10-18T05:40:56.186855 #10928]  INFO -- shell-centos-71: [default] -- 22 => 2222 (adapter 1)[default] Booting VM...
+I, [2015-10-18T05:40:56.358657 #10928]  INFO -- shell-centos-71: [default] Waiting for machine to boot. This may take a few minutes...
+I, [2015-10-18T05:41:12.361528 #10928]  INFO -- shell-centos-71: [default] Machine booted and ready!
+I, [2015-10-18T05:41:12.397174 #10928]  INFO -- shell-centos-71: [default] The guest additions on this VM do not match the installed version of
+I, [2015-10-18T05:41:12.397236 #10928]  INFO -- shell-centos-71: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2015-10-18T05:41:12.397251 #10928]  INFO -- shell-centos-71: prevent things such as shared folders from working properly. If you see
+I, [2015-10-18T05:41:12.397264 #10928]  INFO -- shell-centos-71: shared folder errors, please make sure the guest additions within the
+I, [2015-10-18T05:41:12.397275 #10928]  INFO -- shell-centos-71: virtual machine match the version of VirtualBox you have installed on
+I, [2015-10-18T05:41:12.397286 #10928]  INFO -- shell-centos-71: your host and reload your VM.
+I, [2015-10-18T05:41:12.397296 #10928]  INFO -- shell-centos-71: 
+I, [2015-10-18T05:41:12.397305 #10928]  INFO -- shell-centos-71: Guest Additions Version: 5.0.6
+I, [2015-10-18T05:41:12.398237 #10928]  INFO -- shell-centos-71: [default] Setting hostname...
+I, [2015-10-18T05:41:16.418955 #10928]  INFO -- shell-centos-71: [SSH] Established
+I, [2015-10-18T05:41:16.419264 #10928]  INFO -- shell-centos-71: Vagrant instance <shell-centos-71> created.
+I, [2015-10-18T05:41:16.419870 #10928]  INFO -- shell-centos-71: Finished creating <shell-centos-71> (0m28.99s).
+I, [2015-10-18T05:41:16.419951 #10928]  INFO -- shell-centos-71: -----> Converging <shell-centos-71>...
+I, [2015-10-18T05:41:16.420336 #10928]  INFO -- shell-centos-71: Preparing files for transfer
+I, [2015-10-18T05:41:16.420413 #10928]  INFO -- shell-centos-71: Preparing dna.json
+I, [2015-10-18T05:41:16.420580 #10928]  INFO -- shell-centos-71: Resolving cookbook dependencies with Berkshelf 4.0.1...
+I, [2015-10-18T05:41:16.480529 #10928]  INFO -- shell-centos-71: Removing non-cookbook files before transfer
+I, [2015-10-18T05:41:16.482302 #10928]  INFO -- shell-centos-71: Preparing solo.rb
+I, [2015-10-18T05:41:16.598899 #10928]  INFO -- shell-centos-71: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-10-18T05:41:16.599101 #10928]  INFO -- shell-centos-71: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
+I, [2015-10-18T05:41:16.599122 #10928]  INFO -- shell-centos-71: Trying wget...
+I, [2015-10-18T05:41:21.776499 #10928]  INFO -- shell-centos-71: Download complete.
+I, [2015-10-18T05:41:21.943803 #10928]  INFO -- shell-centos-71: Downloading Chef  for el...
+I, [2015-10-18T05:41:21.943857 #10928]  INFO -- shell-centos-71: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=7&m=x86_64
+I, [2015-10-18T05:41:21.943871 #10928]  INFO -- shell-centos-71:   to file /tmp/install.sh.8865/metadata.txt
+I, [2015-10-18T05:41:21.943881 #10928]  INFO -- shell-centos-71: trying wget...
+I, [2015-10-18T05:41:27.094985 #10928]  INFO -- shell-centos-71: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/7/x86_64/chef-12.5.1-1.el7.x86_64.rpm
+I, [2015-10-18T05:41:27.095035 #10928]  INFO -- shell-centos-71: md5	9333136ba8a11bd6cad6d28fcd26a2c7
+I, [2015-10-18T05:41:27.095049 #10928]  INFO -- shell-centos-71: sha256	7a937d8c0ab68a1f342aba4ad33417fc4ba8cb1a71f46e4a18b5e76c363e4075
+I, [2015-10-18T05:41:27.139766 #10928]  INFO -- shell-centos-71: downloaded metadata file looks valid...
+I, [2015-10-18T05:41:27.279312 #10928]  INFO -- shell-centos-71: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/7/x86_64/chef-12.5.1-1.el7.x86_64.rpm
+I, [2015-10-18T05:41:27.279369 #10928]  INFO -- shell-centos-71:   to file /tmp/install.sh.8865/chef-12.5.1-1.el7.x86_64.rpm
+I, [2015-10-18T05:41:27.279393 #10928]  INFO -- shell-centos-71: trying wget...
+I, [2015-10-18T05:41:43.778052 #10928]  INFO -- shell-centos-71: Comparing checksum with sha256sum...
+I, [2015-10-18T05:41:43.979951 #10928]  INFO -- shell-centos-71: 
+I, [2015-10-18T05:41:43.980004 #10928]  INFO -- shell-centos-71: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-10-18T05:41:43.980018 #10928]  INFO -- shell-centos-71: 
+I, [2015-10-18T05:41:43.980028 #10928]  INFO -- shell-centos-71: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-10-18T05:41:43.980046 #10928]  INFO -- shell-centos-71: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-10-18T05:41:43.980056 #10928]  INFO -- shell-centos-71: be upgraded without warning on new releases, even to new major releases.
+I, [2015-10-18T05:41:43.980065 #10928]  INFO -- shell-centos-71: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-10-18T05:41:43.980074 #10928]  INFO -- shell-centos-71: CI/CD environments.
+I, [2015-10-18T05:41:43.980082 #10928]  INFO -- shell-centos-71: 
+I, [2015-10-18T05:41:43.980091 #10928]  INFO -- shell-centos-71: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-10-18T05:41:43.980100 #10928]  INFO -- shell-centos-71: 
+I, [2015-10-18T05:41:43.980114 #10928]  INFO -- shell-centos-71: Installing Chef 
+I, [2015-10-18T05:41:43.980123 #10928]  INFO -- shell-centos-71: installing with rpm...
+I, [2015-10-18T05:41:44.022109 #10928]  INFO -- shell-centos-71: warning: /tmp/install.sh.8865/chef-12.5.1-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2015-10-18T05:41:44.208113 #10928]  INFO -- shell-centos-71: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2015-10-18T05:41:44.227451 #10928]  INFO -- shell-centos-71: Updating / installing...
+I, [2015-10-18T05:41:47.864900 #10928]  INFO -- shell-centos-71:                            (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 52%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2015-10-18T05:41:48.404037 #10928]  INFO -- shell-centos-71: Thank you for installing Chef!
+I, [2015-10-18T05:41:48.590047 #10928]  INFO -- shell-centos-71: Transferring files to <shell-centos-71>
+I, [2015-10-18T05:41:51.053575 #10928]  INFO -- shell-centos-71: Starting Chef Client, version 12.5.1
+I, [2015-10-18T05:41:57.018520 #10928]  INFO -- shell-centos-71: Compiling Cookbooks...
+I, [2015-10-18T05:41:57.030319 #10928]  INFO -- shell-centos-71: Converging 2 resources
+I, [2015-10-18T05:41:57.030386 #10928]  INFO -- shell-centos-71: Recipe: mongodb::repo
+I, [2015-10-18T05:41:57.032401 #10928]  INFO -- shell-centos-71: 
+I, [2015-10-18T05:41:57.039818 #10928]  INFO -- shell-centos-71: 
+I, [2015-10-18T05:41:57.039889 #10928]  INFO -- shell-centos-71:       - create new file /etc/yum.repos.d/mongodb.repo
+I, [2015-10-18T05:41:57.039909 #10928]  INFO -- shell-centos-71:       - update content in file /etc/yum.repos.d/mongodb.repo from none to 40cf0d
+I, [2015-10-18T05:41:57.039923 #10928]  INFO -- shell-centos-71:       --- /etc/yum.repos.d/mongodb.repo	2015-10-18 12:41:55.749422384 +0000
+I, [2015-10-18T05:41:57.039935 #10928]  INFO -- shell-centos-71:       +++ /etc/yum.repos.d/.mongodb.repo20151018-12171-10kz9qb	2015-10-18 12:41:55.749422384 +0000
+I, [2015-10-18T05:41:57.039947 #10928]  INFO -- shell-centos-71:       @@ -1 +1,9 @@
+I, [2015-10-18T05:41:57.039958 #10928]  INFO -- shell-centos-71:       +# This file was generated by Chef
+I, [2015-10-18T05:41:57.039968 #10928]  INFO -- shell-centos-71:       +# Do NOT modify this file by hand.
+I, [2015-10-18T05:41:57.039979 #10928]  INFO -- shell-centos-71:       +
+I, [2015-10-18T05:41:57.039989 #10928]  INFO -- shell-centos-71:       +[mongodb]
+I, [2015-10-18T05:41:57.039999 #10928]  INFO -- shell-centos-71:       +name=MongoDB Repository
+I, [2015-10-18T05:41:57.040019 #10928]  INFO -- shell-centos-71:       +baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.0/x86_64/
+I, [2015-10-18T05:41:57.040030 #10928]  INFO -- shell-centos-71:       +enabled=1
+I, [2015-10-18T05:41:57.040040 #10928]  INFO -- shell-centos-71:       +gpgcheck=0
+I, [2015-10-18T05:41:57.083032 #10928]  INFO -- shell-centos-71: 
+I, [2015-10-18T05:41:57.083180 #10928]  INFO -- shell-centos-71:       - restore selinux security context
+I, [2015-10-18T05:41:57.306595 #10928]  INFO -- shell-centos-71: 
+I, [2015-10-18T05:41:57.306648 #10928]  INFO -- shell-centos-71:       - execute yum clean headers --disablerepo=* --enablerepo=mongodb
+I, [2015-10-18T05:42:08.016531 #10928]  INFO -- shell-centos-71: 
+I, [2015-10-18T05:42:08.016591 #10928]  INFO -- shell-centos-71:       - execute yum -q -y makecache --disablerepo=* --enablerepo=mongodb
+I, [2015-10-18T05:42:08.016606 #10928]  INFO -- shell-centos-71:     * ruby_block[yum-cache-reload-mongodb] action create
+I, [2015-10-18T05:42:08.016616 #10928]  INFO -- shell-centos-71:       - execute the ruby block yum-cache-reload-mongodb
+I, [2015-10-18T05:42:08.016626 #10928]  INFO -- shell-centos-71:     * execute[yum clean headers mongodb] action nothing (skipped due to action :nothing)
+I, [2015-10-18T05:42:08.016636 #10928]  INFO -- shell-centos-71:     * execute[yum-makecache-mongodb] action nothing (skipped due to action :nothing)
+I, [2015-10-18T05:42:08.016645 #10928]  INFO -- shell-centos-71:     * ruby_block[yum-cache-reload-mongodb] action nothing (skipped due to action :nothing)
+I, [2015-10-18T05:42:08.016664 #10928]  INFO -- shell-centos-71:   
+I, [2015-10-18T05:42:08.016674 #10928]  INFO -- shell-centos-71: Recipe: mongodb::shell
+I, [2015-10-18T05:42:50.120175 #10928]  INFO -- shell-centos-71: 
+I, [2015-10-18T05:42:50.120242 #10928]  INFO -- shell-centos-71:     - install version 3.0.7-1.el7 of package mongodb-org-shell
+I, [2015-10-18T05:42:50.120255 #10928]  INFO -- shell-centos-71: 
+I, [2015-10-18T05:42:50.120265 #10928]  INFO -- shell-centos-71: Running handlers:
+I, [2015-10-18T05:42:50.120275 #10928]  INFO -- shell-centos-71: Running handlers complete
+I, [2015-10-18T05:42:50.120284 #10928]  INFO -- shell-centos-71: Chef Client finished, 6/9 resources updated in 59 seconds
+I, [2015-10-18T05:42:50.229198 #10928]  INFO -- shell-centos-71: Finished converging <shell-centos-71> (1m33.81s).
+I, [2015-10-18T05:42:50.229302 #10928]  INFO -- shell-centos-71: -----> Setting up <shell-centos-71>...
+I, [2015-10-18T05:42:50.229919 #10928]  INFO -- shell-centos-71: Finished setting up <shell-centos-71> (0m0.00s).
+I, [2015-10-18T05:42:50.229996 #10928]  INFO -- shell-centos-71: -----> Verifying <shell-centos-71>...
+I, [2015-10-18T05:42:50.230290 #10928]  INFO -- shell-centos-71: Preparing files for transfer
+I, [2015-10-18T05:42:50.509126 #10928]  INFO -- shell-centos-71: -----> Installing Busser (busser)
+I, [2015-10-18T05:42:56.521017 #10928]  INFO -- shell-centos-71: Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem ( 18%)Fetching: thor-0.19.0.gem ( 35%)Fetching: thor-0.19.0.gem ( 53%)Fetching: thor-0.19.0.gem ( 71%)Fetching: thor-0.19.0.gem ( 89%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
+I, [2015-10-18T05:42:56.559671 #10928]  INFO -- shell-centos-71: Successfully installed thor-0.19.0
+I, [2015-10-18T05:42:56.600568 #10928]  INFO -- shell-centos-71: Fetching: busser-0.7.1.gemFetching: busser-0.7.1.gem ( 64%)Fetching: busser-0.7.1.gem (100%)Fetching: busser-0.7.1.gem (100%)
+I, [2015-10-18T05:42:56.629001 #10928]  INFO -- shell-centos-71: Successfully installed busser-0.7.1
+I, [2015-10-18T05:42:56.629099 #10928]  INFO -- shell-centos-71: 2 gems installed
+I, [2015-10-18T05:42:56.841855 #10928]  INFO -- shell-centos-71: -----> Setting up Busser
+I, [2015-10-18T05:42:56.841916 #10928]  INFO -- shell-centos-71: Creating BUSSER_ROOT in /tmp/verifier
+I, [2015-10-18T05:42:56.841935 #10928]  INFO -- shell-centos-71: Creating busser binstub
+I, [2015-10-18T05:42:56.846446 #10928]  INFO -- shell-centos-71: Installing Busser plugins: busser-bats
+I, [2015-10-18T05:43:04.706653 #10928]  INFO -- shell-centos-71: Plugin bats installed (version 0.3.0)
+I, [2015-10-18T05:43:04.706725 #10928]  INFO -- shell-centos-71: -----> Running postinstall for bats plugin
+I, [2015-10-18T05:43:04.731794 #10928]  INFO -- shell-centos-71: Installed Bats to /tmp/verifier/vendor/bats/bin/bats
+I, [2015-10-18T05:43:05.008325 #10928]  INFO -- shell-centos-71: Suite path directory /tmp/verifier/suites does not exist, skipping.
+I, [2015-10-18T05:43:05.013631 #10928]  INFO -- shell-centos-71: Transferring files to <shell-centos-71>
+I, [2015-10-18T05:43:05.385880 #10928]  INFO -- shell-centos-71: -----> Running bats test suite
+I, [2015-10-18T05:43:05.441279 #10928]  INFO -- shell-centos-71: [1G   mongo binary is found in PATH[K[77G1/1[2G[1G ✓ mongo binary is found in PATH[K
+I, [2015-10-18T05:43:05.441332 #10928]  INFO -- shell-centos-71: [0m
+I, [2015-10-18T05:43:05.441345 #10928]  INFO -- shell-centos-71: 1 test, 0 failures
+I, [2015-10-18T05:43:05.458829 #10928]  INFO -- shell-centos-71: Finished verifying <shell-centos-71> (0m15.23s).
+I, [2015-10-18T05:43:05.459263 #10928]  INFO -- shell-centos-71: -----> Destroying <shell-centos-71>...
+I, [2015-10-18T05:43:06.128622 #10928]  INFO -- shell-centos-71: [default] Forcing shutdown of VM...
+I, [2015-10-18T05:43:07.210968 #10928]  INFO -- shell-centos-71: [default] Destroying VM and associated drives...
+I, [2015-10-18T05:43:07.546461 #10928]  INFO -- shell-centos-71: Vagrant instance <shell-centos-71> destroyed.
+I, [2015-10-18T05:43:07.547093 #10928]  INFO -- shell-centos-71: Finished destroying <shell-centos-71> (0m2.09s).
+I, [2015-10-18T05:43:07.547326 #10928]  INFO -- shell-centos-71: Finished testing <shell-centos-71> (2m20.12s).
