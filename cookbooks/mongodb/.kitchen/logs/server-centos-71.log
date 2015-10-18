@@ -1,66 +1,24 @@
-I, [2015-10-18T05:57:34.761266 #18683]  INFO -- server-centos-71: -----> Converging <server-centos-71>...
-I, [2015-10-18T05:57:34.761564 #18683]  INFO -- server-centos-71: Preparing files for transfer
-I, [2015-10-18T05:57:34.761614 #18683]  INFO -- server-centos-71: Preparing dna.json
-I, [2015-10-18T05:57:34.761738 #18683]  INFO -- server-centos-71: Resolving cookbook dependencies with Berkshelf 4.0.1...
-I, [2015-10-18T05:57:34.906269 #18683]  INFO -- server-centos-71: Removing non-cookbook files before transfer
-I, [2015-10-18T05:57:34.908209 #18683]  INFO -- server-centos-71: Preparing solo.rb
-I, [2015-10-18T05:57:35.258948 #18683]  INFO -- server-centos-71: -----> Chef Omnibus installation detected (install only if missing)
-I, [2015-10-18T05:57:35.377273 #18683]  INFO -- server-centos-71: Transferring files to <server-centos-71>
-I, [2015-10-18T05:57:38.858463 #18683]  INFO -- server-centos-71: Starting Chef Client, version 12.5.1
-I, [2015-10-18T05:57:44.937269 #18683]  INFO -- server-centos-71: Compiling Cookbooks...
-I, [2015-10-18T05:57:44.983554 #18683]  INFO -- server-centos-71: Converging 9 resources
-I, [2015-10-18T05:57:44.983609 #18683]  INFO -- server-centos-71: Recipe: selinux::_common
-I, [2015-10-18T05:57:46.659646 #18683]  INFO -- server-centos-71:  (up to date)
-I, [2015-10-18T05:57:46.659703 #18683]  INFO -- server-centos-71:   * directory[/etc/selinux] action create (up to date)
-I, [2015-10-18T05:57:46.659718 #18683]  INFO -- server-centos-71: Recipe: selinux::permissive
-I, [2015-10-18T05:57:46.697411 #18683]  INFO -- server-centos-71:  (up to date)
-I, [2015-10-18T05:57:46.697471 #18683]  INFO -- server-centos-71: Recipe: mongodb::repo
-I, [2015-10-18T05:57:46.697485 #18683]  INFO -- server-centos-71:   * yum_repository[mongodb] action create
-I, [2015-10-18T05:57:46.712995 #18683]  INFO -- server-centos-71:  (up to date)
-I, [2015-10-18T05:57:46.713053 #18683]  INFO -- server-centos-71:     * execute[yum clean headers mongodb] action nothing (skipped due to action :nothing)
-I, [2015-10-18T05:57:46.713067 #18683]  INFO -- server-centos-71:     * execute[yum-makecache-mongodb] action nothing (skipped due to action :nothing)
-I, [2015-10-18T05:57:46.713077 #18683]  INFO -- server-centos-71:     * ruby_block[yum-cache-reload-mongodb] action nothing (skipped due to action :nothing)
-I, [2015-10-18T05:57:46.713087 #18683]  INFO -- server-centos-71:      (up to date)
-I, [2015-10-18T05:57:46.713095 #18683]  INFO -- server-centos-71: Recipe: mongodb::server
-I, [2015-10-18T05:57:46.713104 #18683]  INFO -- server-centos-71:   * yum_package[mongodb-org-server] action install (up to date)
-I, [2015-10-18T05:57:47.061663 #18683]  INFO -- server-centos-71:  (up to date)
-I, [2015-10-18T05:57:47.352522 #18683]  INFO -- server-centos-71:  (up to date)
-I, [2015-10-18T05:57:47.671339 #18683]  INFO -- server-centos-71:  (up to date)
-I, [2015-10-18T05:57:48.503001 #18683]  INFO -- server-centos-71: 
-I, [2015-10-18T05:57:48.503207 #18683]  INFO -- server-centos-71:     - start service service[firewalld]
-I, [2015-10-18T05:57:49.159815 #18683]  INFO -- server-centos-71: 
-I, [2015-10-18T05:57:49.159898 #18683]  INFO -- server-centos-71:     - enable service service[firewalld]
-I, [2015-10-18T05:57:49.159924 #18683]  INFO -- server-centos-71:   * firewalld_port[27017/tcp] action add (up to date)
-I, [2015-10-18T05:57:50.361218 #18683]  INFO -- server-centos-71: 
-I, [2015-10-18T05:57:50.361280 #18683]  INFO -- server-centos-71:     - execute       firewall-cmd --zone=public --add-port=27017/tcp
-I, [2015-10-18T05:57:50.361323 #18683]  INFO -- server-centos-71:    firewall-cmd --permanent --zone=public --add-port=27017/tcp
-I, [2015-10-18T05:57:50.361339 #18683]  INFO -- server-centos-71:   
-I, [2015-10-18T05:57:50.361362 #18683]  INFO -- server-centos-71: 
-I, [2015-10-18T05:57:50.361372 #18683]  INFO -- server-centos-71: Running handlers:
-I, [2015-10-18T05:57:50.361381 #18683]  INFO -- server-centos-71: Running handlers complete
-I, [2015-10-18T05:57:50.361391 #18683]  INFO -- server-centos-71: Chef Client finished, 3/16 resources updated in 11 seconds
-I, [2015-10-18T05:57:50.494650 #18683]  INFO -- server-centos-71: Finished converging <server-centos-71> (0m15.73s).
-I, [2015-10-18T05:57:50.494738 #18683]  INFO -- server-centos-71: -----> Setting up <server-centos-71>...
-I, [2015-10-18T05:57:50.495330 #18683]  INFO -- server-centos-71: Finished setting up <server-centos-71> (0m0.00s).
-I, [2015-10-18T05:57:50.495395 #18683]  INFO -- server-centos-71: -----> Verifying <server-centos-71>...
-I, [2015-10-18T05:57:50.495664 #18683]  INFO -- server-centos-71: Preparing files for transfer
-I, [2015-10-18T05:57:50.789422 #18683]  INFO -- server-centos-71: -----> Installing Busser (busser)
-I, [2015-10-18T05:57:57.018331 #18683]  INFO -- server-centos-71: Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem ( 18%)Fetching: thor-0.19.0.gem ( 35%)Fetching: thor-0.19.0.gem ( 53%)Fetching: thor-0.19.0.gem ( 71%)Fetching: thor-0.19.0.gem ( 89%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
-I, [2015-10-18T05:57:57.062052 #18683]  INFO -- server-centos-71: Successfully installed thor-0.19.0
-I, [2015-10-18T05:57:57.103898 #18683]  INFO -- server-centos-71: Fetching: busser-0.7.1.gemFetching: busser-0.7.1.gem ( 64%)Fetching: busser-0.7.1.gem (100%)Fetching: busser-0.7.1.gem (100%)
-I, [2015-10-18T05:57:57.139178 #18683]  INFO -- server-centos-71: Successfully installed busser-0.7.1
-I, [2015-10-18T05:57:57.139233 #18683]  INFO -- server-centos-71: 2 gems installed
-I, [2015-10-18T05:57:57.386662 #18683]  INFO -- server-centos-71: -----> Setting up Busser
-I, [2015-10-18T05:57:57.386720 #18683]  INFO -- server-centos-71: Creating BUSSER_ROOT in /tmp/verifier
-I, [2015-10-18T05:57:57.386737 #18683]  INFO -- server-centos-71: Creating busser binstub
-I, [2015-10-18T05:57:57.391533 #18683]  INFO -- server-centos-71: Installing Busser plugins: busser-bats
-I, [2015-10-18T05:58:21.897590 #18683]  INFO -- server-centos-71: Plugin bats installed (version 0.3.0)
-I, [2015-10-18T05:58:21.897660 #18683]  INFO -- server-centos-71: -----> Running postinstall for bats plugin
-I, [2015-10-18T05:58:21.922917 #18683]  INFO -- server-centos-71: Installed Bats to /tmp/verifier/vendor/bats/bin/bats
-I, [2015-10-18T05:58:22.295474 #18683]  INFO -- server-centos-71: Suite path directory /tmp/verifier/suites does not exist, skipping.
-I, [2015-10-18T05:58:22.303399 #18683]  INFO -- server-centos-71: Transferring files to <server-centos-71>
-I, [2015-10-18T05:58:22.692485 #18683]  INFO -- server-centos-71: -----> Running bats test suite
-I, [2015-10-18T05:58:22.750695 #18683]  INFO -- server-centos-71: [1G   mongod binary is found in PATH[K[77G1/1[2G[1G ✓ mongod binary is found in PATH[K
-I, [2015-10-18T05:58:22.750749 #18683]  INFO -- server-centos-71: [0m
-I, [2015-10-18T05:58:22.750762 #18683]  INFO -- server-centos-71: 1 test, 0 failures
-I, [2015-10-18T05:58:22.762490 #18683]  INFO -- server-centos-71: Finished verifying <server-centos-71> (0m32.27s).
+I, [2015-10-18T07:03:51.511273 #22791]  INFO -- server-centos-71: -----> Verifying <server-centos-71>...
+I, [2015-10-18T07:03:51.511572 #22791]  INFO -- server-centos-71: Preparing files for transfer
+I, [2015-10-18T07:03:51.964577 #22791]  INFO -- server-centos-71: -----> Busser installation detected (busser)
+I, [2015-10-18T07:03:51.964711 #22791]  INFO -- server-centos-71: Installing Busser plugins: busser-bats busser-serverspec
+I, [2015-10-18T07:03:57.747712 #22791]  INFO -- server-centos-71: Plugin bats already installed
+I, [2015-10-18T07:03:57.747862 #22791]  INFO -- server-centos-71: Plugin serverspec already installed
+I, [2015-10-18T07:03:58.049956 #22791]  INFO -- server-centos-71: Removing /tmp/verifier/suites/serverspec
+I, [2015-10-18T07:03:58.050045 #22791]  INFO -- server-centos-71: Removing /tmp/verifier/suites/bats
+I, [2015-10-18T07:03:58.055582 #22791]  INFO -- server-centos-71: Transferring files to <server-centos-71>
+I, [2015-10-18T07:03:58.466436 #22791]  INFO -- server-centos-71: -----> Running bats test suite
+I, [2015-10-18T07:03:58.515210 #22791]  INFO -- server-centos-71: [1G   mongod binary is found in PATH[K[77G1/1[2G[1G ✓ mongod binary is found in PATH[K
+I, [2015-10-18T07:03:58.515267 #22791]  INFO -- server-centos-71: [0m
+I, [2015-10-18T07:03:58.515284 #22791]  INFO -- server-centos-71: 1 test, 0 failures
+I, [2015-10-18T07:03:58.520968 #22791]  INFO -- server-centos-71: -----> Running serverspec test suite
+I, [2015-10-18T07:03:58.597279 #22791]  INFO -- server-centos-71: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.3.0/lib:/tmp/verifier/gems/gems/rspec-core-3.3.2/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+I, [2015-10-18T07:03:58.957510 #22791]  INFO -- server-centos-71: 
+I, [2015-10-18T07:03:58.957585 #22791]  INFO -- server-centos-71: Mongo Daemon
+I, [2015-10-18T07:03:59.022657 #22791]  INFO -- server-centos-71: [32m  is listening on port 27017[0m
+I, [2015-10-18T07:03:59.052413 #22791]  INFO -- server-centos-71: [32m  has a running service of mongod[0m
+I, [2015-10-18T07:03:59.052476 #22791]  INFO -- server-centos-71: 
+I, [2015-10-18T07:03:59.052494 #22791]  INFO -- server-centos-71: Finished in 0.08868 seconds (files took 0.32522 seconds to load)
+I, [2015-10-18T07:03:59.052507 #22791]  INFO -- server-centos-71: [32m2 examples, 0 failures[0m
+I, [2015-10-18T07:03:59.052518 #22791]  INFO -- server-centos-71: 
+I, [2015-10-18T07:03:59.078317 #22791]  INFO -- server-centos-71: Finished verifying <server-centos-71> (0m7.57s).
