@@ -58,3 +58,6 @@ Berksfile.lock
 #Test Kitchen
 .kitchen/
 .kitchen.local.yml
+
+#SimpleCov
+coverage/
