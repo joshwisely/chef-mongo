@@ -1,5 +1,5 @@
 name               'mongodb'
-version            '0.1.1'
+version            '0.1.7'
 maintainer         'Josh Wisely'
 maintainer_email   'joshwisely@gmail.com'
 description        'Installs/Configures MongoDB'

@@ -1,7 +1,3 @@
-log node['platform']
-log node['platform_version']
-log node['platform_family']
-
 #Take care of repo.
 include_recipe 'mongodb::repo'
 
