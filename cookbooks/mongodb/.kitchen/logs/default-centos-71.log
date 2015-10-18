@@ -1,160 +1,149 @@
-I, [2015-10-18T04:44:12.689803 #19826]  INFO -- default-centos-71: -----> Cleaning up any prior instances of <default-centos-71>
-I, [2015-10-18T04:44:12.690164 #19826]  INFO -- default-centos-71: -----> Destroying <default-centos-71>...
-I, [2015-10-18T04:44:13.355807 #19826]  INFO -- default-centos-71: [default] Forcing shutdown of VM...
-I, [2015-10-18T04:44:14.527257 #19826]  INFO -- default-centos-71: [default] Destroying VM and associated drives...
-I, [2015-10-18T04:44:14.850613 #19826]  INFO -- default-centos-71: Vagrant instance <default-centos-71> destroyed.
-I, [2015-10-18T04:44:14.851720 #19826]  INFO -- default-centos-71: Finished destroying <default-centos-71> (0m2.16s).
-I, [2015-10-18T04:44:14.851959 #19826]  INFO -- default-centos-71: -----> Testing <default-centos-71>
-I, [2015-10-18T04:44:14.852078 #19826]  INFO -- default-centos-71: -----> Creating <default-centos-71>...
-I, [2015-10-18T04:44:15.047965 #19826]  INFO -- default-centos-71: Bringing machine 'default' up with 'virtualbox' provider...
-I, [2015-10-18T04:44:15.131862 #19826]  INFO -- default-centos-71: [default] Importing base box 'opscode-centos-7.1'...
-I, [2015-10-18T04:44:22.955535 #19826]  INFO -- default-centos-71: Progress: 20%Progress: 50%Progress: 70%Progress: 90%[default] Matching MAC address for NAT networking...
-I, [2015-10-18T04:44:23.267935 #19826]  INFO -- default-centos-71: [default] Setting the name of the VM...
-I, [2015-10-18T04:44:23.347188 #19826]  INFO -- default-centos-71: [default] Clearing any previously set forwarded ports...
-I, [2015-10-18T04:44:23.472812 #19826]  INFO -- default-centos-71: [default] Clearing any previously set network interfaces...
-I, [2015-10-18T04:44:23.540620 #19826]  INFO -- default-centos-71: [default] Preparing network interfaces based on configuration...
-I, [2015-10-18T04:44:23.612581 #19826]  INFO -- default-centos-71: [default] Forwarding ports...
-I, [2015-10-18T04:44:23.670372 #19826]  INFO -- default-centos-71: [default] -- 22 => 2222 (adapter 1)
-I, [2015-10-18T04:44:23.879621 #19826]  INFO -- default-centos-71: [default] Booting VM...
-I, [2015-10-18T04:44:24.090211 #19826]  INFO -- default-centos-71: [default] Waiting for machine to boot. This may take a few minutes...
-I, [2015-10-18T04:44:40.089478 #19826]  INFO -- default-centos-71: [default] Machine booted and ready!
-I, [2015-10-18T04:44:40.121105 #19826]  INFO -- default-centos-71: [default] The guest additions on this VM do not match the installed version of
-I, [2015-10-18T04:44:40.121173 #19826]  INFO -- default-centos-71: VirtualBox! In most cases this is fine, but in rare cases it can
-I, [2015-10-18T04:44:40.121196 #19826]  INFO -- default-centos-71: prevent things such as shared folders from working properly. If you see
-I, [2015-10-18T04:44:40.121207 #19826]  INFO -- default-centos-71: shared folder errors, please make sure the guest additions within the
-I, [2015-10-18T04:44:40.121218 #19826]  INFO -- default-centos-71: virtual machine match the version of VirtualBox you have installed on
-I, [2015-10-18T04:44:40.121228 #19826]  INFO -- default-centos-71: your host and reload your VM.
-I, [2015-10-18T04:44:40.121238 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:44:40.121248 #19826]  INFO -- default-centos-71: Guest Additions Version: 5.0.6
-I, [2015-10-18T04:44:40.121257 #19826]  INFO -- default-centos-71: VirtualBox Version: 4.3
-I, [2015-10-18T04:44:40.121389 #19826]  INFO -- default-centos-71: [default] Setting hostname...
-I, [2015-10-18T04:44:44.258947 #19826]  INFO -- default-centos-71: [SSH] Established
-I, [2015-10-18T04:44:44.259293 #19826]  INFO -- default-centos-71: Vagrant instance <default-centos-71> created.
-I, [2015-10-18T04:44:44.259866 #19826]  INFO -- default-centos-71: Finished creating <default-centos-71> (0m29.41s).
-I, [2015-10-18T04:44:44.259946 #19826]  INFO -- default-centos-71: -----> Converging <default-centos-71>...
-I, [2015-10-18T04:44:44.260341 #19826]  INFO -- default-centos-71: Preparing files for transfer
-I, [2015-10-18T04:44:44.260411 #19826]  INFO -- default-centos-71: Preparing dna.json
-I, [2015-10-18T04:44:44.260600 #19826]  INFO -- default-centos-71: Resolving cookbook dependencies with Berkshelf 4.0.1...
-I, [2015-10-18T04:44:45.476948 #19826]  INFO -- default-centos-71: Removing non-cookbook files before transfer
-I, [2015-10-18T04:44:45.478180 #19826]  INFO -- default-centos-71: Preparing solo.rb
-I, [2015-10-18T04:44:45.590862 #19826]  INFO -- default-centos-71: -----> Installing Chef Omnibus (install only if missing)
-I, [2015-10-18T04:44:45.591027 #19826]  INFO -- default-centos-71: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
-I, [2015-10-18T04:44:45.591047 #19826]  INFO -- default-centos-71: Trying wget...
-I, [2015-10-18T04:44:50.803070 #19826]  INFO -- default-centos-71: Download complete.
-I, [2015-10-18T04:44:50.970860 #19826]  INFO -- default-centos-71: Downloading Chef  for el...
-I, [2015-10-18T04:44:50.970950 #19826]  INFO -- default-centos-71: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=7&m=x86_64
-I, [2015-10-18T04:44:50.970986 #19826]  INFO -- default-centos-71:   to file /tmp/install.sh.8869/metadata.txt
-I, [2015-10-18T04:44:50.970998 #19826]  INFO -- default-centos-71: trying wget...
-I, [2015-10-18T04:44:56.164499 #19826]  INFO -- default-centos-71: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/7/x86_64/chef-12.5.1-1.el7.x86_64.rpm
-I, [2015-10-18T04:44:56.164556 #19826]  INFO -- default-centos-71: md5	9333136ba8a11bd6cad6d28fcd26a2c7
-I, [2015-10-18T04:44:56.164570 #19826]  INFO -- default-centos-71: sha256	7a937d8c0ab68a1f342aba4ad33417fc4ba8cb1a71f46e4a18b5e76c363e4075
-I, [2015-10-18T04:44:56.216340 #19826]  INFO -- default-centos-71: downloaded metadata file looks valid...
-I, [2015-10-18T04:44:56.365358 #19826]  INFO -- default-centos-71: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/7/x86_64/chef-12.5.1-1.el7.x86_64.rpm
-I, [2015-10-18T04:44:56.365411 #19826]  INFO -- default-centos-71:   to file /tmp/install.sh.8869/chef-12.5.1-1.el7.x86_64.rpm
-I, [2015-10-18T04:44:56.365425 #19826]  INFO -- default-centos-71: trying wget...
-I, [2015-10-18T04:45:12.313396 #19826]  INFO -- default-centos-71: Comparing checksum with sha256sum...
-I, [2015-10-18T04:45:12.515879 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:45:12.515959 #19826]  INFO -- default-centos-71: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-I, [2015-10-18T04:45:12.515974 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:45:12.515985 #19826]  INFO -- default-centos-71: You are installing an omnibus package without a version pin.  If you are installing
-I, [2015-10-18T04:45:12.515997 #19826]  INFO -- default-centos-71: on production servers via an automated process this is DANGEROUS and you will
-I, [2015-10-18T04:45:12.516008 #19826]  INFO -- default-centos-71: be upgraded without warning on new releases, even to new major releases.
-I, [2015-10-18T04:45:12.516019 #19826]  INFO -- default-centos-71: Letting the version float is only appropriate in desktop, test, development or
-I, [2015-10-18T04:45:12.516029 #19826]  INFO -- default-centos-71: CI/CD environments.
-I, [2015-10-18T04:45:12.516038 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:45:12.516048 #19826]  INFO -- default-centos-71: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-I, [2015-10-18T04:45:12.516057 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:45:12.516067 #19826]  INFO -- default-centos-71: Installing Chef 
-I, [2015-10-18T04:45:12.516076 #19826]  INFO -- default-centos-71: installing with rpm...
-I, [2015-10-18T04:45:12.554340 #19826]  INFO -- default-centos-71: warning: /tmp/install.sh.8869/chef-12.5.1-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
-I, [2015-10-18T04:45:12.700894 #19826]  INFO -- default-centos-71: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
-I, [2015-10-18T04:45:12.711516 #19826]  INFO -- default-centos-71: Updating / installing...
-I, [2015-10-18T04:45:16.530369 #19826]  INFO -- default-centos-71:                            (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 52%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
-I, [2015-10-18T04:45:17.216849 #19826]  INFO -- default-centos-71: Thank you for installing Chef!
-I, [2015-10-18T04:45:17.351786 #19826]  INFO -- default-centos-71: Transferring files to <default-centos-71>
-I, [2015-10-18T04:45:19.134642 #19826]  INFO -- default-centos-71: Starting Chef Client, version 12.5.1
-I, [2015-10-18T04:45:25.042443 #19826]  INFO -- default-centos-71: Compiling Cookbooks...
-I, [2015-10-18T04:45:25.062285 #19826]  INFO -- default-centos-71: Converging 5 resources
-I, [2015-10-18T04:45:25.062347 #19826]  INFO -- default-centos-71: Recipe: mongodb::default
-I, [2015-10-18T04:45:25.062359 #19826]  INFO -- default-centos-71:   * yum_repository[mongodo] action create
-I, [2015-10-18T04:45:25.073625 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:45:25.075284 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:45:25.075368 #19826]  INFO -- default-centos-71:       - update content in file /etc/yum.repos.d/mongodo.repo from none to 220cdf
-I, [2015-10-18T04:45:25.075419 #19826]  INFO -- default-centos-71:       --- /etc/yum.repos.d/mongodo.repo	2015-10-18 11:45:24.067752572 +0000
-I, [2015-10-18T04:45:25.075431 #19826]  INFO -- default-centos-71:       +++ /etc/yum.repos.d/.mongodo.repo20151018-12178-1u4kxk2	2015-10-18 11:45:24.067752572 +0000
-I, [2015-10-18T04:45:25.075442 #19826]  INFO -- default-centos-71:       @@ -1 +1,9 @@
-I, [2015-10-18T04:45:25.075452 #19826]  INFO -- default-centos-71:       +# This file was generated by Chef
-I, [2015-10-18T04:45:25.075461 #19826]  INFO -- default-centos-71:       +# Do NOT modify this file by hand.
-I, [2015-10-18T04:45:25.075471 #19826]  INFO -- default-centos-71:       +
-I, [2015-10-18T04:45:25.075480 #19826]  INFO -- default-centos-71:       +[mongodo]
-I, [2015-10-18T04:45:25.075489 #19826]  INFO -- default-centos-71:       +name=MongoDB Repository
-I, [2015-10-18T04:45:25.075498 #19826]  INFO -- default-centos-71:       +baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.0/x86_64/
-I, [2015-10-18T04:45:25.075506 #19826]  INFO -- default-centos-71:       +enabled=1
-I, [2015-10-18T04:45:25.075516 #19826]  INFO -- default-centos-71:       +gpgcheck=0
-I, [2015-10-18T04:45:25.124148 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:45:25.124204 #19826]  INFO -- default-centos-71:       - restore selinux security context
-I, [2015-10-18T04:45:25.344270 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:45:25.344338 #19826]  INFO -- default-centos-71:       - execute yum clean headers --disablerepo=* --enablerepo=mongodo
-I, [2015-10-18T04:45:36.283500 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:45:36.283557 #19826]  INFO -- default-centos-71:       - execute yum -q -y makecache --disablerepo=* --enablerepo=mongodo
-I, [2015-10-18T04:45:36.283578 #19826]  INFO -- default-centos-71:     * ruby_block[yum-cache-reload-mongodo] action create
-I, [2015-10-18T04:45:36.283589 #19826]  INFO -- default-centos-71:       - execute the ruby block yum-cache-reload-mongodo
-I, [2015-10-18T04:45:36.283599 #19826]  INFO -- default-centos-71:     * execute[yum clean headers mongodo] action nothing (skipped due to action :nothing)
-I, [2015-10-18T04:45:36.283608 #19826]  INFO -- default-centos-71:     * execute[yum-makecache-mongodo] action nothing (skipped due to action :nothing)
-I, [2015-10-18T04:45:36.283617 #19826]  INFO -- default-centos-71:     * ruby_block[yum-cache-reload-mongodo] action nothing (skipped due to action :nothing)
-I, [2015-10-18T04:45:36.283625 #19826]  INFO -- default-centos-71:   
-I, [2015-10-18T04:46:18.774755 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:46:18.774843 #19826]  INFO -- default-centos-71:     - install version 3.0.7-1.el7 of package mongodb-org-server
-I, [2015-10-18T04:46:25.573646 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:46:25.573707 #19826]  INFO -- default-centos-71:     - install version 3.0.7-1.el7 of package mongodb-org-mongos
-I, [2015-10-18T04:46:32.221579 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:46:32.221638 #19826]  INFO -- default-centos-71:     - install version 3.0.7-1.el7 of package mongodb-org-shell
-I, [2015-10-18T04:46:43.601004 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:46:43.679877 #19826]  INFO -- default-centos-71:     - install version 3.0.7-1.el7 of package mongodb-org-tools
-I, [2015-10-18T04:46:43.679933 #19826]  INFO -- default-centos-71: 
-I, [2015-10-18T04:46:43.679946 #19826]  INFO -- default-centos-71: Running handlers:
-I, [2015-10-18T04:46:43.679957 #19826]  INFO -- default-centos-71: Running handlers complete
-I, [2015-10-18T04:46:43.679968 #19826]  INFO -- default-centos-71: Chef Client finished, 9/12 resources updated in 01 minutes 24 seconds
-I, [2015-10-18T04:46:43.763835 #19826]  INFO -- default-centos-71: Finished converging <default-centos-71> (1m59.50s).
-I, [2015-10-18T04:46:43.763943 #19826]  INFO -- default-centos-71: -----> Setting up <default-centos-71>...
-I, [2015-10-18T04:46:43.764589 #19826]  INFO -- default-centos-71: Finished setting up <default-centos-71> (0m0.00s).
-I, [2015-10-18T04:46:43.764657 #19826]  INFO -- default-centos-71: -----> Verifying <default-centos-71>...
-I, [2015-10-18T04:46:43.765001 #19826]  INFO -- default-centos-71: Preparing files for transfer
-I, [2015-10-18T04:46:44.141088 #19826]  INFO -- default-centos-71: -----> Installing Busser (busser)
-I, [2015-10-18T04:46:50.368871 #19826]  INFO -- default-centos-71: Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem ( 18%)Fetching: thor-0.19.0.gem ( 35%)Fetching: thor-0.19.0.gem ( 53%)Fetching: thor-0.19.0.gem ( 71%)Fetching: thor-0.19.0.gem ( 89%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
-I, [2015-10-18T04:46:50.396878 #19826]  INFO -- default-centos-71: Successfully installed thor-0.19.0
-I, [2015-10-18T04:46:50.457005 #19826]  INFO -- default-centos-71: Fetching: busser-0.7.1.gemFetching: busser-0.7.1.gem ( 64%)Fetching: busser-0.7.1.gem (100%)Fetching: busser-0.7.1.gem (100%)
-I, [2015-10-18T04:46:50.482381 #19826]  INFO -- default-centos-71: Successfully installed busser-0.7.1
-I, [2015-10-18T04:46:50.482482 #19826]  INFO -- default-centos-71: 2 gems installed
-I, [2015-10-18T04:46:50.703258 #19826]  INFO -- default-centos-71: -----> Setting up Busser
-I, [2015-10-18T04:46:50.703474 #19826]  INFO -- default-centos-71: Creating BUSSER_ROOT in /tmp/verifier
-I, [2015-10-18T04:46:50.703568 #19826]  INFO -- default-centos-71: Creating busser binstub
-I, [2015-10-18T04:46:50.713745 #19826]  INFO -- default-centos-71: Installing Busser plugins: busser-bats
-I, [2015-10-18T04:46:57.870818 #19826]  INFO -- default-centos-71: Plugin bats installed (version 0.3.0)
-I, [2015-10-18T04:46:57.870875 #19826]  INFO -- default-centos-71: -----> Running postinstall for bats plugin
-I, [2015-10-18T04:46:57.892466 #19826]  INFO -- default-centos-71: Installed Bats to /tmp/verifier/vendor/bats/bin/bats
-I, [2015-10-18T04:46:58.171920 #19826]  INFO -- default-centos-71: Suite path directory /tmp/verifier/suites does not exist, skipping.
-I, [2015-10-18T04:46:58.178821 #19826]  INFO -- default-centos-71: Transferring files to <default-centos-71>
-I, [2015-10-18T04:46:59.083380 #19826]  INFO -- default-centos-71: -----> Running bats test suite
-I, [2015-10-18T04:46:59.309999 #19826]  INFO -- default-centos-71: [1G   bsondump binary is found in PATH[K[75G 1/13[2G[1G ✓ bsondump binary is found in PATH[K
-I, [2015-10-18T04:46:59.342100 #19826]  INFO -- default-centos-71: [1G ✓ mongod binary is found in PATH[K
-I, [2015-10-18T04:46:59.369242 #19826]  INFO -- default-centos-71: [1G ✓ mongodump binary is found in PATH[K
-I, [2015-10-18T04:46:59.396495 #19826]  INFO -- default-centos-71: [1G ✓ mongoexport binary is found in PATH[K
-I, [2015-10-18T04:46:59.419732 #19826]  INFO -- default-centos-71: [1G ✓ mongofiles binary is found in PATH[K
-I, [2015-10-18T04:46:59.446038 #19826]  INFO -- default-centos-71: [1G ✓ mongoimport binary is found in PATH[K
-I, [2015-10-18T04:46:59.468960 #19826]  INFO -- default-centos-71: [1G ✓ mongo binary is found in PATH[K
-I, [2015-10-18T04:46:59.491047 #19826]  INFO -- default-centos-71: [1G ✓ mongooplog binary is found in PATH[K
-I, [2015-10-18T04:46:59.518112 #19826]  INFO -- default-centos-71: [1G ✓ mongoperf binary is found in PATH[K
-I, [2015-10-18T04:46:59.545346 #19826]  INFO -- default-centos-71: [1G ✓ mongorestore binary is found in PATH[K
-I, [2015-10-18T04:46:59.568464 #19826]  INFO -- default-centos-71: [1G ✓ mongos binary is found in PATH[K
-I, [2015-10-18T04:46:59.589746 #19826]  INFO -- default-centos-71: [1G ✓ mongostat binary is found in PATH[K
-I, [2015-10-18T04:46:59.598712 #19826]  INFO -- default-centos-71: [1G ✓ mongoitop binary is found in PATH[K
-I, [2015-10-18T04:46:59.598770 #19826]  INFO -- default-centos-71: [0m
-I, [2015-10-18T04:46:59.598784 #19826]  INFO -- default-centos-71: 13 tests, 0 failures
-I, [2015-10-18T04:46:59.614229 #19826]  INFO -- default-centos-71: Finished verifying <default-centos-71> (0m15.85s).
-I, [2015-10-18T04:46:59.614614 #19826]  INFO -- default-centos-71: -----> Destroying <default-centos-71>...
-I, [2015-10-18T04:47:00.349712 #19826]  INFO -- default-centos-71: [default] Forcing shutdown of VM...
-I, [2015-10-18T04:47:01.461291 #19826]  INFO -- default-centos-71: [default] Destroying VM and associated drives...
-I, [2015-10-18T04:47:01.841114 #19826]  INFO -- default-centos-71: Vagrant instance <default-centos-71> destroyed.
-I, [2015-10-18T04:47:01.841828 #19826]  INFO -- default-centos-71: Finished destroying <default-centos-71> (0m2.23s).
-I, [2015-10-18T04:47:01.841924 #19826]  INFO -- default-centos-71: Finished testing <default-centos-71> (2m49.15s).
+I, [2015-10-18T05:31:35.451874 #9725]  INFO -- default-centos-71: -----> Cleaning up any prior instances of <default-centos-71>
+I, [2015-10-18T05:31:35.451959 #9725]  INFO -- default-centos-71: -----> Destroying <default-centos-71>...
+I, [2015-10-18T05:31:35.452357 #9725]  INFO -- default-centos-71: Finished destroying <default-centos-71> (0m0.00s).
+I, [2015-10-18T05:31:35.452481 #9725]  INFO -- default-centos-71: -----> Testing <default-centos-71>
+I, [2015-10-18T05:31:35.452538 #9725]  INFO -- default-centos-71: -----> Creating <default-centos-71>...
+I, [2015-10-18T05:31:36.074322 #9725]  INFO -- default-centos-71: Bringing machine 'default' up with 'virtualbox' provider...[default] Importing base box 'opscode-centos-7.1'...
+I, [2015-10-18T05:31:46.506039 #9725]  INFO -- default-centos-71: Progress: 20%Progress: 50%Progress: 70%Progress: 80%Progress: 90%[default] Matching MAC address for NAT networking...
+I, [2015-10-18T05:31:46.952639 #9725]  INFO -- default-centos-71: [default] Setting the name of the VM...
+I, [2015-10-18T05:31:47.053729 #9725]  INFO -- default-centos-71: [default] Clearing any previously set forwarded ports...
+I, [2015-10-18T05:31:47.273141 #9725]  INFO -- default-centos-71: [default] Clearing any previously set network interfaces...
+I, [2015-10-18T05:31:47.326652 #9725]  INFO -- default-centos-71: [default] Preparing network interfaces based on configuration...
+I, [2015-10-18T05:31:47.389903 #9725]  INFO -- default-centos-71: [default] Forwarding ports...
+I, [2015-10-18T05:31:47.435635 #9725]  INFO -- default-centos-71: [default] -- 22 => 2222 (adapter 1)
+I, [2015-10-18T05:31:47.722223 #9725]  INFO -- default-centos-71: [default] Booting VM...
+I, [2015-10-18T05:32:03.974897 #9725]  INFO -- default-centos-71: [default] Waiting for machine to boot. This may take a few minutes...[default] Machine booted and ready!
+I, [2015-10-18T05:32:04.016406 #9725]  INFO -- default-centos-71: [default] The guest additions on this VM do not match the installed version of
+I, [2015-10-18T05:32:04.016580 #9725]  INFO -- default-centos-71: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2015-10-18T05:32:04.016648 #9725]  INFO -- default-centos-71: prevent things such as shared folders from working properly. If you see
+I, [2015-10-18T05:32:04.016694 #9725]  INFO -- default-centos-71: shared folder errors, please make sure the guest additions within the
+I, [2015-10-18T05:32:04.016730 #9725]  INFO -- default-centos-71: virtual machine match the version of VirtualBox you have installed on
+I, [2015-10-18T05:32:04.016766 #9725]  INFO -- default-centos-71: your host and reload your VM.
+I, [2015-10-18T05:32:04.016802 #9725]  INFO -- default-centos-71: 
+I, [2015-10-18T05:32:04.016835 #9725]  INFO -- default-centos-71: Guest Additions Version: 5.0.6
+I, [2015-10-18T05:32:04.016867 #9725]  INFO -- default-centos-71: VirtualBox Version: 4.3
+I, [2015-10-18T05:32:08.866946 #9725]  INFO -- default-centos-71: [default] Setting hostname...[SSH] Established
+I, [2015-10-18T05:32:08.867254 #9725]  INFO -- default-centos-71: Vagrant instance <default-centos-71> created.
+I, [2015-10-18T05:32:08.868167 #9725]  INFO -- default-centos-71: Finished creating <default-centos-71> (0m33.41s).
+I, [2015-10-18T05:32:08.868457 #9725]  INFO -- default-centos-71: -----> Converging <default-centos-71>...
+I, [2015-10-18T05:32:08.868874 #9725]  INFO -- default-centos-71: Preparing files for transfer
+I, [2015-10-18T05:32:08.868946 #9725]  INFO -- default-centos-71: Preparing dna.json
+I, [2015-10-18T05:32:08.869113 #9725]  INFO -- default-centos-71: Resolving cookbook dependencies with Berkshelf 4.0.1...
+I, [2015-10-18T05:32:10.282922 #9725]  INFO -- default-centos-71: Removing non-cookbook files before transfer
+I, [2015-10-18T05:32:10.284613 #9725]  INFO -- default-centos-71: Preparing solo.rb
+I, [2015-10-18T05:32:10.426865 #9725]  INFO -- default-centos-71: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-10-18T05:32:10.427029 #9725]  INFO -- default-centos-71: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
+I, [2015-10-18T05:32:10.427059 #9725]  INFO -- default-centos-71: Trying wget...
+I, [2015-10-18T05:32:15.626794 #9725]  INFO -- default-centos-71: Download complete.
+I, [2015-10-18T05:32:15.816335 #9725]  INFO -- default-centos-71: Downloading Chef  for el...
+I, [2015-10-18T05:32:15.816411 #9725]  INFO -- default-centos-71: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=7&m=x86_64
+I, [2015-10-18T05:32:15.816426 #9725]  INFO -- default-centos-71:   to file /tmp/install.sh.8868/metadata.txt
+I, [2015-10-18T05:32:15.816450 #9725]  INFO -- default-centos-71: trying wget...
+I, [2015-10-18T05:32:21.271830 #9725]  INFO -- default-centos-71: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/7/x86_64/chef-12.5.1-1.el7.x86_64.rpm
+I, [2015-10-18T05:32:21.271886 #9725]  INFO -- default-centos-71: md5	9333136ba8a11bd6cad6d28fcd26a2c7
+I, [2015-10-18T05:32:21.271899 #9725]  INFO -- default-centos-71: sha256	7a937d8c0ab68a1f342aba4ad33417fc4ba8cb1a71f46e4a18b5e76c363e4075
+I, [2015-10-18T05:32:21.314371 #9725]  INFO -- default-centos-71: downloaded metadata file looks valid...
+I, [2015-10-18T05:32:21.472907 #9725]  INFO -- default-centos-71: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/7/x86_64/chef-12.5.1-1.el7.x86_64.rpm
+I, [2015-10-18T05:32:21.473008 #9725]  INFO -- default-centos-71:   to file /tmp/install.sh.8868/chef-12.5.1-1.el7.x86_64.rpm
+I, [2015-10-18T05:32:21.473047 #9725]  INFO -- default-centos-71: trying wget...
+I, [2015-10-18T05:32:43.312809 #9725]  INFO -- default-centos-71: Comparing checksum with sha256sum...
+I, [2015-10-18T05:32:43.514621 #9725]  INFO -- default-centos-71: 
+I, [2015-10-18T05:32:43.514676 #9725]  INFO -- default-centos-71: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-10-18T05:32:43.514689 #9725]  INFO -- default-centos-71: 
+I, [2015-10-18T05:32:43.514699 #9725]  INFO -- default-centos-71: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-10-18T05:32:43.514709 #9725]  INFO -- default-centos-71: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-10-18T05:32:43.514721 #9725]  INFO -- default-centos-71: be upgraded without warning on new releases, even to new major releases.
+I, [2015-10-18T05:32:43.514731 #9725]  INFO -- default-centos-71: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-10-18T05:32:43.514741 #9725]  INFO -- default-centos-71: CI/CD environments.
+I, [2015-10-18T05:32:43.514750 #9725]  INFO -- default-centos-71: 
+I, [2015-10-18T05:32:43.514758 #9725]  INFO -- default-centos-71: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-10-18T05:32:43.514767 #9725]  INFO -- default-centos-71: 
+I, [2015-10-18T05:32:43.514788 #9725]  INFO -- default-centos-71: Installing Chef 
+I, [2015-10-18T05:32:43.514797 #9725]  INFO -- default-centos-71: installing with rpm...
+I, [2015-10-18T05:32:43.555841 #9725]  INFO -- default-centos-71: warning: /tmp/install.sh.8868/chef-12.5.1-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2015-10-18T05:32:43.702342 #9725]  INFO -- default-centos-71: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2015-10-18T05:32:43.715086 #9725]  INFO -- default-centos-71: Updating / installing...
+I, [2015-10-18T05:32:47.383694 #9725]  INFO -- default-centos-71:                            (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 52%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2015-10-18T05:32:48.218036 #9725]  INFO -- default-centos-71: Thank you for installing Chef!
+I, [2015-10-18T05:32:48.355554 #9725]  INFO -- default-centos-71: Transferring files to <default-centos-71>
+I, [2015-10-18T05:32:50.868905 #9725]  INFO -- default-centos-71: Starting Chef Client, version 12.5.1
+I, [2015-10-18T05:32:56.757449 #9725]  INFO -- default-centos-71: Compiling Cookbooks...
+I, [2015-10-18T05:32:56.778508 #9725]  INFO -- default-centos-71: 
+I, [2015-10-18T05:32:56.778579 #9725]  INFO -- default-centos-71: ================================================================================
+I, [2015-10-18T05:32:56.778595 #9725]  INFO -- default-centos-71: Recipe Compile Error in /tmp/kitchen/cookbooks/mongodb/recipes/default.rb
+I, [2015-10-18T05:32:56.778605 #9725]  INFO -- default-centos-71: ================================================================================
+I, [2015-10-18T05:32:56.778615 #9725]  INFO -- default-centos-71: 
+I, [2015-10-18T05:32:56.778624 #9725]  INFO -- default-centos-71: SyntaxError
+I, [2015-10-18T05:32:56.778634 #9725]  INFO -- default-centos-71: -----------
+I, [2015-10-18T05:32:56.778643 #9725]  INFO -- default-centos-71: /tmp/kitchen/cookbooks/mongodb/recipes/repo.rb:2: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+I, [2015-10-18T05:32:56.778653 #9725]  INFO -- default-centos-71:   5 yum_repository 'mongodb' do
+I, [2015-10-18T05:32:56.778672 #9725]  INFO -- default-centos-71:            ^
+I, [2015-10-18T05:32:56.778682 #9725]  INFO -- default-centos-71: 
+I, [2015-10-18T05:32:56.778692 #9725]  INFO -- default-centos-71: Cookbook Trace:
+I, [2015-10-18T05:32:56.778701 #9725]  INFO -- default-centos-71: ---------------
+I, [2015-10-18T05:32:56.778710 #9725]  INFO -- default-centos-71:   /tmp/kitchen/cookbooks/mongodb/recipes/server.rb:5:in `from_file'
+I, [2015-10-18T05:32:56.778719 #9725]  INFO -- default-centos-71:   /tmp/kitchen/cookbooks/mongodb/recipes/default.rb:2:in `from_file'
+I, [2015-10-18T05:32:56.778729 #9725]  INFO -- default-centos-71: 
+I, [2015-10-18T05:32:56.778749 #9725]  INFO -- default-centos-71: Relevant File Content:
+I, [2015-10-18T05:32:56.778758 #9725]  INFO -- default-centos-71: ----------------------
+I, [2015-10-18T05:32:56.778767 #9725]  INFO -- default-centos-71: /tmp/kitchen/cookbooks/mongodb/recipes/server.rb:
+I, [2015-10-18T05:32:56.778775 #9725]  INFO -- default-centos-71: 
+I, [2015-10-18T05:32:56.778784 #9725]  INFO -- default-centos-71:   1:  #Take care of SELinux.
+I, [2015-10-18T05:32:56.778792 #9725]  INFO -- default-centos-71:   2:  include_recipe 'selinux::permissive'
+I, [2015-10-18T05:32:56.778800 #9725]  INFO -- default-centos-71:   3:  
+I, [2015-10-18T05:32:56.778809 #9725]  INFO -- default-centos-71:   4:  #Take care of repo.
+I, [2015-10-18T05:32:56.778817 #9725]  INFO -- default-centos-71:   5>> include_recipe 'mongodb::repo'
+I, [2015-10-18T05:32:56.778825 #9725]  INFO -- default-centos-71:   6:  
+I, [2015-10-18T05:32:56.778834 #9725]  INFO -- default-centos-71:   7:  #Install package.
+I, [2015-10-18T05:32:56.778842 #9725]  INFO -- default-centos-71:   8:  package 'mongodb-org-server' do
+I, [2015-10-18T05:32:56.778851 #9725]  INFO -- default-centos-71:   9:    action :install
+I, [2015-10-18T05:32:56.778859 #9725]  INFO -- default-centos-71:  10:    version '3.0.7-1.el7'
+I, [2015-10-18T05:32:56.778868 #9725]  INFO -- default-centos-71:  11:  end
+I, [2015-10-18T05:32:56.778886 #9725]  INFO -- default-centos-71:  12:  
+I, [2015-10-18T05:32:56.778896 #9725]  INFO -- default-centos-71:  13:  #Setup service.
+I, [2015-10-18T05:32:56.778904 #9725]  INFO -- default-centos-71:  14:  service "mongod" do
+I, [2015-10-18T05:32:56.778913 #9725]  INFO -- default-centos-71: 
+I, [2015-10-18T05:32:56.778921 #9725]  INFO -- default-centos-71: 
+I, [2015-10-18T05:32:56.778929 #9725]  INFO -- default-centos-71: Running handlers:
+I, [2015-10-18T05:32:56.778937 #9725]  INFO -- default-centos-71: [2015-10-18T12:32:54+00:00] ERROR: Running exception handlers
+I, [2015-10-18T05:32:56.778945 #9725]  INFO -- default-centos-71: Running handlers complete
+I, [2015-10-18T05:32:56.778954 #9725]  INFO -- default-centos-71: [2015-10-18T12:32:54+00:00] ERROR: Exception handlers complete
+I, [2015-10-18T05:32:56.778962 #9725]  INFO -- default-centos-71: Chef Client failed. 0 resources updated in 05 seconds
+I, [2015-10-18T05:32:56.778972 #9725]  INFO -- default-centos-71: [2015-10-18T12:32:54+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2015-10-18T05:32:56.778980 #9725]  INFO -- default-centos-71: [2015-10-18T12:32:54+00:00] ERROR: /tmp/kitchen/cookbooks/mongodb/recipes/repo.rb:2: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+I, [2015-10-18T05:32:56.779003 #9725]  INFO -- default-centos-71:   5 yum_repository 'mongodb' do
+I, [2015-10-18T05:32:56.779038 #9725]  INFO -- default-centos-71:            ^
+I, [2015-10-18T05:32:56.828780 #9725]  INFO -- default-centos-71: [2015-10-18T12:32:54+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-10-18T05:32:56.855663 #9725] ERROR -- default-centos-71: Converge failed on instance <default-centos-71>.
+E, [2015-10-18T05:32:56.855974 #9725] ERROR -- default-centos-71: ------Exception-------
+E, [2015-10-18T05:32:56.856007 #9725] ERROR -- default-centos-71: Class: Kitchen::ActionFailed
+E, [2015-10-18T05:32:56.856025 #9725] ERROR -- default-centos-71: Message: SSH exited (1) for command: [sh -c '
+
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-10-18T05:32:56.856037 #9725] ERROR -- default-centos-71: ---Nested Exception---
+E, [2015-10-18T05:32:56.856048 #9725] ERROR -- default-centos-71: Class: Kitchen::Transport::SshFailed
+E, [2015-10-18T05:32:56.856060 #9725] ERROR -- default-centos-71: Message: SSH exited (1) for command: [sh -c '
+
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-10-18T05:32:56.856070 #9725] ERROR -- default-centos-71: ------Backtrace-------
+E, [2015-10-18T05:32:56.856081 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/provisioner/base.rb:74:in `rescue in call'
+E, [2015-10-18T05:32:56.856091 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/provisioner/base.rb:77:in `call'
+E, [2015-10-18T05:32:56.856103 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:366:in `block in converge_action'
+E, [2015-10-18T05:32:56.856115 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:488:in `call'
+E, [2015-10-18T05:32:56.856126 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:488:in `synchronize_or_call'
+E, [2015-10-18T05:32:56.856136 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:453:in `block in action'
+E, [2015-10-18T05:32:56.856153 #9725] ERROR -- default-centos-71: /usr/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-10-18T05:32:56.856165 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:452:in `action'
+E, [2015-10-18T05:32:56.856176 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:362:in `converge_action'
+E, [2015-10-18T05:32:56.856210 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:341:in `block in transition_to'
+E, [2015-10-18T05:32:56.856223 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:340:in `each'
+E, [2015-10-18T05:32:56.856235 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:340:in `transition_to'
+E, [2015-10-18T05:32:56.856245 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2015-10-18T05:32:56.856256 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:189:in `block in test'
+E, [2015-10-18T05:32:56.856269 #9725] ERROR -- default-centos-71: /usr/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-10-18T05:32:56.856279 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:185:in `test'
+E, [2015-10-18T05:32:56.856302 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-10-18T05:32:56.856309 #9725] ERROR -- default-centos-71: /var/lib/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-10-18T05:32:56.856318 #9725] ERROR -- default-centos-71: ----------------------

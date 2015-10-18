@@ -13,3 +13,24 @@ suites:
     run_list:
       - recipe[mongodb::default]
     attributes:
+
+  - name: server
+    run_list:
+      - recipe[mongodb::server]
+    attributes:
+
+  - name: shell
+    run_list:
+      - recipe[mongodb::shell]
+    attributes:
+
+  - name: tools
+    run_list:
+      - recipe[mongodb::tools]
+    attributes:
+
+  - name: mongos
+    run_list:
+      - recipe[mongodb::mongos]
+    attributes:
+
