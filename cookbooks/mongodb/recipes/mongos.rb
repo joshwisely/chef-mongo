@@ -1,6 +1,3 @@
-#Take care of SELinux.
-include_recipe 'selinux::permissive'
-
 #Take care of repo.
 include_recipe 'mongodb::repo'
 
