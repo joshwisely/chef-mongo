@@ -1,2 +1,5 @@
-name "mongodb"
-version "0.0.1"
+name               'mongodb'
+version            '0.0.1'
+maintainer         'Josh Wisely'
+maintainer_email   'joshwisely@gmail.com'
+supports           'centos'
