@@ -17,11 +17,6 @@ service 'firewalld' do
   action [:stop, :disable]
 end
 
-#Setup iptables service.
-service 'iptables' do
-  action [:start, :enable]
-end
-
 #Remove packages.
 package 'mongodb-org-server' do
   action :remove

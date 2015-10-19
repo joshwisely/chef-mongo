@@ -12,11 +12,6 @@ service 'mongod' do
   action [:start, :enable]
 end
 
-#Tear down iptables service.
-service 'iptables' do
-  action [:stop, :disable]
-end
-
 #Setup firewalld service.
 service 'firewalld' do
   action [:start, :enable]
