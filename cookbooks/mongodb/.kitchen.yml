@@ -34,4 +34,9 @@ suites:
     run_list:
       - recipe[mongodb::mongos]
     attributes:
+  
+  - name: remove
+    run_list:
+      - recipe[mongodb::remove]
+    attributes:
 
