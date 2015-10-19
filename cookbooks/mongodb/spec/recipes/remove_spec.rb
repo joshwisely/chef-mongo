@@ -19,14 +19,6 @@ describe 'mongodb::remove' do
     expect(chef_run).to disable_service('firewalld')
   end
 
-  it 'start iptables service' do
-    expect(chef_run).to start_service('iptables')
-  end
-
-  it 'enables iptables service' do
-    expect(chef_run).to enable_service('iptables')
-  end
-
   it 'removes mongodb-org-server' do
     expect(chef_run).to remove_package('mongodb-org-server')
   end

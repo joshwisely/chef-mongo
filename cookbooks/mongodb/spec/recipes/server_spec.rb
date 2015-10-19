@@ -27,12 +27,5 @@ describe 'mongodb::server' do
     expect(chef_run).to start_service('firewalld')
   end
 
-  it 'stop iptables service' do
-    expect(chef_run).to stop_service('iptables')
-  end
-
-  it 'disables iptables service' do
-    expect(chef_run).to disable_service('iptables')
-  end
 end
 	
