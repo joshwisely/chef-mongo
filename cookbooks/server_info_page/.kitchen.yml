@@ -1,0 +1,26 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-7.0
+  - name: centos-7.1
+
+suites:
+  - name: default
+    run_list:
+      - recipe[server_info_page::default]
+    attributes:
+
+  - name: add
+    run_list:
+      - recipe[server_info_page::add]
+    attributes:
+
+  - name: remove
+    run_list:
+      - recipe[server_info_page::remove]
+    attributes:

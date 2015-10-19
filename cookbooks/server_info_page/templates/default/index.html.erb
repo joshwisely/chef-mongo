@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <pre>
+      FQDN            : <%= node['fqdn'] %>
+      Hostname        : <%= node['hostname'] %>
+      Domain          : <%= node['domain'] %>
+      Platform        : <%= node['platform'] %>
+      Platform Family : <%= node['platform_version'] %>
+      Memory          : <%= node['memory']['total'] %> RAM
+      CPU             : <%= node['cpu']['total'] %> CPUs
+    </pre>
+  </body>
+</html>
