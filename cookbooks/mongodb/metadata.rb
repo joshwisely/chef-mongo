@@ -1,10 +1,10 @@
 name               'mongodb'
-version            '0.2.0'
+version            '0.2.1'
 
 maintainer         'Josh Wisely'
 maintainer_email   'joshwisely@gmail.com'
 
-description        'Installs/Configures MongoDB'
+description        'Installs and configures MongoDB.'
 long_description    IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 
 supports           'centos', ">= 7.0"

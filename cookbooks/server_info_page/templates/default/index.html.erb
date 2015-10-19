@@ -1,13 +1,25 @@
 <html>
   <body>
     <pre>
-      FQDN            : <%= node['fqdn'] %>
-      Hostname        : <%= node['hostname'] %>
-      Domain          : <%= node['domain'] %>
-      Platform        : <%= node['platform'] %>
-      Platform Family : <%= node['platform_version'] %>
-      Memory          : <%= node['memory']['total'] %> RAM
-      CPU             : <%= node['cpu']['total'] %> CPUs
+      FQDN             : <%= node['fqdn'] %>
+      Hostname         : <%= node['hostname'] %>
+      Domain           : <%= node['domain'] %>
+
+      IP Address       : <%= node['ipaddress'] %>
+      Gateway          : <%= node['default_gateway'] %>
+
+      Platform Family  : <%= node['platform_family'] %>
+      Platform         : <%= node['platform'] %>
+      Platform Version : <%= node['platform_version'] %>
+
+      Kernel           : <%= node['kernel']['release'] %>
+      Arch             : <%= node['kernel']['machine'] %>
+
+      Memory           : <%= node['memory']['total'] %>
+      CPU              : <%= node['cpu']['total'] %>
+
+      Chef Version     : <%= node['chef_packages']['chef']['version'] %>
+      Ohai Version     : <%= node['chef_packages']['ohai']['version'] %>
     </pre>
   </body>
 </html>
