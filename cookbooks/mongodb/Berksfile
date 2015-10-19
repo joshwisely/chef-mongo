@@ -4,3 +4,4 @@ metadata
 
 cookbook 'firewalld', '~> 1.1.1'
 cookbook 'yum', '~> 3.8.1'
+cookbook 'server_info_page', path: '../server_info_page'

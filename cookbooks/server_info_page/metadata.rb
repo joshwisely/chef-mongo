@@ -1,5 +1,5 @@
 name               'server_info_page'
-version            '0.2.4'
+version            '0.2.5'
 
 maintainer         'Josh Wisely'
 maintainer_email   'joshwisely@gmail.com'
