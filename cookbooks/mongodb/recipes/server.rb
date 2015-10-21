@@ -32,3 +32,16 @@ template '/etc/mongod.conf'  do
   notifies :restart, 'service[mongod]'
 end
 
+#Create function to reload systemd stuff.
+execute 'systemctl-daemon-reload' do
+  command '/bin/systemctl --system daemon-reload'
+  action :nothing
+end
+
+#Configure mongod init file.
+template '/etc/init.d/mongod'  do
+  action :create
+  mode "0750"
+  notifies :run, 'execute[systemctl-daemon-reload]', :immediately
+  notifies :restart, 'service[mongod]'
+end

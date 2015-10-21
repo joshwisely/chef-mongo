@@ -1,5 +1,5 @@
 name               'mongodb'
-version            '0.3.0'
+version            '0.3.5'
 
 maintainer         'Josh Wisely'
 maintainer_email   'joshwisely@gmail.com'
