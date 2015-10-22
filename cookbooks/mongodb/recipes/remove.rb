@@ -18,17 +18,10 @@ service 'firewalld' do
 end
 
 #Remove packages.
-package 'mongodb-org-server' do
-  action :remove
-end
-package 'mongodb-org-shell' do
-  action :remove
-end
-package 'mongodb-org-tools' do
-  action :remove
-end
-package 'mongodb-org-mongos' do
-  action :remove
+%w{mongodb-ord-server mongodb-org-shell mongodo-org-tools mongodb-org-mongos}.each do |pkg|
+  package pkg do
+    action :remove
+  end
 end
 
 #Tear down mongod conf file.
